@@ -32,6 +32,11 @@ export const translations = {
                     id: 3,
                     title: 'Social Media',
                     description: 'Social media management tools and analytics dashboards.',
+                },
+                {
+                    id: 4,
+                    title: 'IT Infrastructure & Hardware Consultancy',
+                    description: 'Professional consultancy services for corporate hardware needs, server configuration, and network infrastructure.',
                 }
             ]
         },
@@ -99,6 +104,11 @@ export const translations = {
                     id: 3,
                     title: 'Sosyal Medya',
                     description: 'Sosyal medya yönetimi ve analiz araçları.',
+                },
+                {
+                    id: 4,
+                    title: 'BT Altyapı ve Donanım Danışmanlığı',
+                    description: 'Kurumsal donanım ihtiyaçları, sunucu yapılandırması ve ağ altyapısı için profesyonel danışmanlık hizmetleri.',
                 }
             ]
         },
@@ -166,6 +176,11 @@ export const translations = {
                     id: 3,
                     title: 'وسائل التواصل الاجتماعي',
                     description: 'أدوات إدارة وتحليل وسائل التواصل الاجتماعي.',
+                },
+                {
+                    id: 4,
+                    title: 'استشارات البنية التحتية وتكنولوجيا المعلومات',
+                    description: 'خدمات استشارية احترافية لاحتياجات الأجهزة المؤسسية، وتكوين الخوادم، والبنية التحتية للشبكة.',
                 }
             ]
         },
@@ -233,6 +248,11 @@ export const translations = {
                     id: 3,
                     title: 'Soziale Medien',
                     description: 'Social-Media-Management-Tools und Analyse-Dashboards.',
+                },
+                {
+                    id: 4,
+                    title: 'IT-Infrastruktur & Hardware-Beratung',
+                    description: 'Professionelle Beratungsdienste für Unternehmenshardwarebedarf, Serverkonfiguration und Netzwerkinfrastruktur.',
                 }
             ]
         },
@@ -300,6 +320,11 @@ export const translations = {
                     id: 3,
                     title: 'Социальные сети',
                     description: 'Инструменты управления социальными сетями и аналитические панели.',
+                },
+                {
+                    id: 4,
+                    title: 'Консалтинг по IT-инфраструктуре',
+                    description: 'Профессиональные консультационные услуги по потребностям в корпоративном оборудовании, настройке серверов и сетевой инфраструктуре.',
                 }
             ]
         },
