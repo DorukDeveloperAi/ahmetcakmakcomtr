@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown, FaDownload, FaYoutube } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import './Hero.css';
 
@@ -42,6 +42,7 @@ const Hero = () => {
                         <a href="https://github.com" target="_blank" rel="noreferrer"><FaGithub /></a>
                         <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a>
                         <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
+                        <a href="https://www.youtube.com/@dolunay86" target="_blank" rel="noreferrer"><FaYoutube /></a>
                     </div>
                 </motion.div>
 
