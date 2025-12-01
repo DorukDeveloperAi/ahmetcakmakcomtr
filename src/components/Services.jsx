@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import './Services.css';
@@ -8,6 +8,11 @@ const Services = () => {
     const { t } = useLanguage();
     const scrollContainer = React.useRef(null);
     const [isHovered, setIsHovered] = React.useState(false);
+    const [showAllServices, setShowAllServices] = React.useState(false);
+
+    const toggleAllServices = () => {
+        setShowAllServices(!showAllServices);
+    };
 
     const staticProjectData = [
         {
@@ -144,6 +149,41 @@ const Services = () => {
 
                 <div className="view-all-container">
                     <a href="#contact" className="btn btn-outline">{t.projects.viewAll}</a>
+                </div>
+
+                <div className="all-services-section">
+                    <button
+                        className={`all-services-toggle ${showAllServices ? 'active' : ''}`}
+                        onClick={toggleAllServices}
+                    >
+                        {t.projects.allServicesBtn}
+                        <span className="toggle-icon">{showAllServices ? '−' : '+'}</span>
+                    </button>
+
+                    <AnimatePresence>
+                        {showAllServices && (
+                            <motion.div
+                                className="all-services-list"
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: 'auto', opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <div className="services-categories">
+                                    {t.projects.allServicesList && t.projects.allServicesList.map((category, index) => (
+                                        <div key={index} className="service-category">
+                                            <h4>{category.category}</h4>
+                                            <ul>
+                                                {category.items.map((item, idx) => (
+                                                    <li key={idx}>{item}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ))}
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
         </section>

@@ -51,6 +51,47 @@ export const translations = {
                     title: 'AI Integration & Automation Solutions',
                     description: 'Integrating advanced AI models and LLMs into business workflows for enhanced automation and efficiency.',
                 }
+            ],
+            allServicesBtn: 'View All Services',
+            allServicesList: [
+                {
+                    category: 'Web & Software Development',
+                    items: [
+                        'Corporate Website Development',
+                        'E-commerce Solutions',
+                        'Custom Web Application Development',
+                        'API Integration & Development',
+                        'Mobile App Development (iOS/Android)'
+                    ]
+                },
+                {
+                    category: 'IT Infrastructure & Network',
+                    items: [
+                        'Server Installation & Management (Windows/Linux)',
+                        'Network Security & Firewall Solutions',
+                        'Virtualization Solutions (VMware/Hyper-V)',
+                        'Backup & Disaster Recovery',
+                        'Active Directory Management'
+                    ]
+                },
+                {
+                    category: 'Consultancy & Strategy',
+                    items: [
+                        'Digital Transformation Consultancy',
+                        'IT Process Management',
+                        'ERP/CRM Selection & Implementation',
+                        'Technology Stack Advisory'
+                    ]
+                },
+                {
+                    category: 'AI & Automation',
+                    items: [
+                        'AI Model Integration',
+                        'Workflow Automation',
+                        'Chatbot Development',
+                        'Data Analysis & Reporting'
+                    ]
+                }
             ]
         },
         skills: {
@@ -123,6 +164,47 @@ export const translations = {
                     id: 5,
                     title: 'Yapay Zeka Entegrasyonu ve Otomasyon Çözümleri',
                     description: 'İş süreçlerini otomatize etmek ve verimliliği artırmak için gelişmiş yapay zeka modellerinin (LLM) entegrasyonu.',
+                }
+            ],
+            allServicesBtn: 'Tüm Hizmetleri Görüntüle',
+            allServicesList: [
+                {
+                    category: 'Web ve Yazılım Geliştirme',
+                    items: [
+                        'Kurumsal Web Sitesi Geliştirme',
+                        'E-ticaret Çözümleri',
+                        'Özel Web Uygulama Geliştirme',
+                        'API Entegrasyonu ve Geliştirme',
+                        'Mobil Uygulama Geliştirme (iOS/Android)'
+                    ]
+                },
+                {
+                    category: 'BT Altyapı ve Ağ',
+                    items: [
+                        'Sunucu Kurulumu ve Yönetimi (Windows/Linux)',
+                        'Ağ Güvenliği ve Firewall Çözümleri',
+                        'Sanallaştırma Çözümleri (VMware/Hyper-V)',
+                        'Yedekleme ve Felaket Kurtarma',
+                        'Active Directory Yönetimi'
+                    ]
+                },
+                {
+                    category: 'Danışmanlık ve Strateji',
+                    items: [
+                        'Dijital Dönüşüm Danışmanlığı',
+                        'BT Süreç Yönetimi',
+                        'ERP/CRM Seçimi ve Uygulama',
+                        'Teknoloji Yığını Danışmanlığı'
+                    ]
+                },
+                {
+                    category: 'Yapay Zeka ve Otomasyon',
+                    items: [
+                        'Yapay Zeka Model Entegrasyonu',
+                        'İş Akışı Otomasyonu',
+                        'Chatbot Geliştirme',
+                        'Veri Analizi ve Raporlama'
+                    ]
                 }
             ]
         },
@@ -209,6 +291,47 @@ export const translations = {
                     title: 'حلول تكامل الذكاء الاصطناعي والأتمتة',
                     description: 'دمج نماذج الذكاء الاصطناعي المتقدمة في سير العمل التجاري لتعزيز الأتمتة والكفاءة.',
                 }
+            ],
+            allServicesBtn: 'عرض جميع الخدمات',
+            allServicesList: [
+                {
+                    category: 'تطوير الويب والبرمجيات',
+                    items: [
+                        'تطوير مواقع الويب للشركات',
+                        'حلول التجارة الإلكترونية',
+                        'تطوير تطبيقات الويب المخصصة',
+                        'تكامل وتطوير واجهة برمجة التطبيقات (API)',
+                        'تطوير تطبيقات الهاتف المحمول (iOS/Android)'
+                    ]
+                },
+                {
+                    category: 'البنية التحتية لتكنولوجيا المعلومات والشبكات',
+                    items: [
+                        'تثبيت وإدارة الخوادم (Windows/Linux)',
+                        'أمن الشبكات وحلول الجدار الناري',
+                        'حلول المحاكاة الافتراضية (VMware/Hyper-V)',
+                        'النسخ الاحتياطي والتعافي من الكوارث',
+                        'إدارة Active Directory'
+                    ]
+                },
+                {
+                    category: 'الاستشارات والاستراتيجية',
+                    items: [
+                        'استشارات التحول الرقمي',
+                        'إدارة عمليات تكنولوجيا المعلومات',
+                        'اختيار وتنفيذ ERP/CRM',
+                        'استشارات التكنولوجيا'
+                    ]
+                },
+                {
+                    category: 'الذكاء الاصطناعي والأتمتة',
+                    items: [
+                        'تكامل نماذج الذكاء الاصطناعي',
+                        'أتمتة سير العمل',
+                        'تطوير روبوتات الدردشة',
+                        'تحليل البيانات وإعداد التقارير'
+                    ]
+                }
             ]
         },
         skills: {
@@ -272,7 +395,7 @@ export const translations = {
                 {
                     id: 1,
                     title: 'Webseiten-Beratung',
-                    description: 'Moderne, responsive und SEO-freundliche Unternehmenswebsite-Lösungen.',
+                    description: 'Moderne, responsive und SEO-freundliche Unternehmenswebseiten-Lösungen.',
                 },
                 {
                     id: 2,
@@ -282,7 +405,7 @@ export const translations = {
                 {
                     id: 3,
                     title: 'Social Media Beratung',
-                    description: 'Social-Media-Management-Tools und Analyse-Dashboards.',
+                    description: 'Social Media Management-Tools und Analyse-Dashboards.',
                 },
                 {
                     id: 4,
@@ -293,6 +416,47 @@ export const translations = {
                     id: 5,
                     title: 'KI-Integration & Automatisierungslösungen',
                     description: 'Integration fortschrittlicher KI-Modelle in Geschäftsprozesse zur Steigerung von Automatisierung und Effizienz.',
+                }
+            ],
+            allServicesBtn: 'Alle Dienstleistungen anzeigen',
+            allServicesList: [
+                {
+                    category: 'Web- & Softwareentwicklung',
+                    items: [
+                        'Entwicklung von Unternehmenswebseiten',
+                        'E-Commerce-Lösungen',
+                        'Entwicklung kundenspezifischer Webanwendungen',
+                        'API-Integration & Entwicklung',
+                        'Mobile App-Entwicklung (iOS/Android)'
+                    ]
+                },
+                {
+                    category: 'IT-Infrastruktur & Netzwerk',
+                    items: [
+                        'Serverinstallation & -verwaltung (Windows/Linux)',
+                        'Netzwerksicherheit & Firewall-Lösungen',
+                        'Virtualisierungslösungen (VMware/Hyper-V)',
+                        'Backup & Disaster Recovery',
+                        'Active Directory-Verwaltung'
+                    ]
+                },
+                {
+                    category: 'Beratung & Strategie',
+                    items: [
+                        'Beratung zur digitalen Transformation',
+                        'IT-Prozessmanagement',
+                        'Auswahl & Implementierung von ERP/CRM',
+                        'Technologieberatung'
+                    ]
+                },
+                {
+                    category: 'KI & Automatisierung',
+                    items: [
+                        'Integration von KI-Modellen',
+                        'Workflow-Automatisierung',
+                        'Chatbot-Entwicklung',
+                        'Datenanalyse & Reporting'
+                    ]
                 }
             ]
         },
@@ -378,6 +542,47 @@ export const translations = {
                     id: 5,
                     title: 'Решения по интеграции ИИ и автоматизации',
                     description: 'Интеграция передовых моделей ИИ в бизнес-процессы для повышения автоматизации и эффективности.',
+                }
+            ],
+            allServicesBtn: 'Посмотреть все услуги',
+            allServicesList: [
+                {
+                    category: 'Веб и разработка ПО',
+                    items: [
+                        'Разработка корпоративных веб-сайтов',
+                        'Решения для электронной коммерции',
+                        'Разработка пользовательских веб-приложений',
+                        'Интеграция и разработка API',
+                        'Разработка мобильных приложений (iOS/Android)'
+                    ]
+                },
+                {
+                    category: 'IT-инфраструктура и сети',
+                    items: [
+                        'Установка и управление серверами (Windows/Linux)',
+                        'Сетевая безопасность и решения Firewall',
+                        'Решения виртуализации (VMware/Hyper-V)',
+                        'Резервное копирование и аварийное восстановление',
+                        'Управление Active Directory'
+                    ]
+                },
+                {
+                    category: 'Консалтинг и стратегия',
+                    items: [
+                        'Консалтинг по цифровой трансформации',
+                        'Управление IT-процессами',
+                        'Выбор и внедрение ERP/CRM',
+                        'Консультации по технологическому стеку'
+                    ]
+                },
+                {
+                    category: 'ИИ и автоматизация',
+                    items: [
+                        'Интеграция моделей ИИ',
+                        'Автоматизация рабочих процессов',
+                        'Разработка чат-ботов',
+                        'Анализ данных и отчетность'
+                    ]
                 }
             ]
         },
