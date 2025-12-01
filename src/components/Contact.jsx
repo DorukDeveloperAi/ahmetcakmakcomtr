@@ -7,6 +7,35 @@ import './Contact.css';
 const Contact = () => {
     const { t } = useLanguage();
 
+    const [formStatus, setFormStatus] = React.useState('idle'); // idle, sending, success, error
+
+    if (formStatus === 'success') {
+        return (
+            <section id="contact" className="section contact-section">
+                <div className="container">
+                    <motion.div
+                        className="success-message-container"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <div className="success-icon">✅</div>
+                        <h3>{t.contact.form.successTitle || "Mesajınız Gönderildi!"}</h3>
+                        <p>
+                            {t.contact.form.successMessage || "Mesajınız başarıyla iletildi. Lütfen Ahmet Çakmak ile iletişime geçerek teyit ediniz."}
+                        </p>
+                        <button
+                            className="btn btn-primary"
+                            onClick={() => setFormStatus('idle')}
+                        >
+                            {t.contact.form.sendNew || "Yeni Mesaj Gönder"}
+                        </button>
+                    </motion.div>
+                </div>
+            </section>
+        );
+    }
+
     return (
         <section id="contact" className="section contact-section">
             <div className="container">
@@ -62,10 +91,7 @@ const Contact = () => {
                                 message: formData.get('message')
                             };
 
-                            const submitBtn = e.target.querySelector('button[type="submit"]');
-                            const originalText = submitBtn.innerText;
-                            submitBtn.innerText = 'Sending...';
-                            submitBtn.disabled = true;
+                            setFormStatus('sending');
 
                             try {
                                 const response = await fetch('/send-mail.php', {
@@ -79,8 +105,7 @@ const Contact = () => {
                                 const result = await response.json();
 
                                 if (result.status === 'success') {
-                                    alert('Message sent successfully!');
-                                    e.target.reset();
+                                    setFormStatus('success');
                                 } else {
                                     throw new Error(result.message || 'Failed to send');
                                 }
@@ -89,9 +114,7 @@ const Contact = () => {
                                 alert('Could not send email directly. Redirecting to WhatsApp...');
                                 const waMessage = `Name: ${data.name}%0AEmail: ${data.email}%0AMessage: ${data.message}`;
                                 window.open(`https://wa.me/905317626327?text=${waMessage}`, '_blank');
-                            } finally {
-                                submitBtn.innerText = originalText;
-                                submitBtn.disabled = false;
+                                setFormStatus('idle');
                             }
                         }}
                     >
@@ -107,7 +130,9 @@ const Contact = () => {
                             <label htmlFor="message">{t.contact.form.message}</label>
                             <textarea id="message" name="message" rows="5" placeholder="..." required></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary">{t.contact.form.send}</button>
+                        <button type="submit" className="btn btn-primary" disabled={formStatus === 'sending'}>
+                            {formStatus === 'sending' ? 'Sending...' : t.contact.form.send}
+                        </button>
                     </motion.form>
                 </div>
             </div>
