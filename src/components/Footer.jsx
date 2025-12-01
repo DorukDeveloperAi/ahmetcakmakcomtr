@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer-downloads">
                     <h3>{t.nav.downloadApp}</h3>
                     <div className="download-buttons">
-                        <a href="/app-release.apk" className="download-btn android" download>
+                        <a href="https://github.com/DorukDeveloperAi/ahmetcakmakcomtr/actions" className="download-btn android" target="_blank" rel="noreferrer">
                             <FaAndroid /> <span>{t.nav.android}</span>
                         </a>
                         <a href="#" className="download-btn ios" onClick={(e) => { e.preventDefault(); alert('iOS App Coming Soon!'); }}>
