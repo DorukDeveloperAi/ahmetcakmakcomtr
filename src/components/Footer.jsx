@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer-downloads">
                     <h3>{t.nav.downloadApp}</h3>
                     <div className="download-buttons">
-                        <a href="https://github.com/DorukDeveloperAi/ahmetcakmakcomtr/actions" className="download-btn android" target="_blank" rel="noreferrer">
+                        <a href="/app-release.apk" className="download-btn android" download>
                             <FaAndroid /> <span>{t.nav.android}</span>
                         </a>
                         <a href="https://github.com/DorukDeveloperAi/ahmetcakmakcomtr/actions" className="download-btn ios" target="_blank" rel="noreferrer">

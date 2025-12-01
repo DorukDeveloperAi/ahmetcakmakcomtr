@@ -34,9 +34,24 @@ async function deploy() {
         }
 
         // Clear directory
+        // Clear directory
         console.log("Clearing remote directory...");
-        await client.clearWorkingDir();
-        console.log("Remote directory cleared.");
+        const remoteFiles = await client.list();
+        for (const file of remoteFiles) {
+            if (file.name === 'app-release.apk' || file.name === '.' || file.name === '..') {
+                continue;
+            }
+            try {
+                if (file.isDirectory) {
+                    await client.removeDir(file.name);
+                } else {
+                    await client.remove(file.name);
+                }
+            } catch (e) {
+                console.log(`Failed to remove ${file.name}:`, e);
+            }
+        }
+        console.log("Remote directory cleared (preserved app-release.apk).");
 
         // Upload dist folder
         console.log("Uploading dist folder...");
