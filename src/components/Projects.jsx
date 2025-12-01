@@ -63,44 +63,42 @@ const Projects = () => {
                     {t.projects.title}
                 </motion.h2>
 
-                <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
-                    <motion.div
-                        drag="x"
-                        dragConstraints={{ right: 0, left: -width }}
-                        className="inner-carousel"
-                    >
-                        {projects.map((project) => (
-                            <motion.div
-                                key={project.id}
-                                className="project-card"
-                            >
-                                <div className="project-image">
-                                    <img src={project.image} alt={project.title} />
-                                    <div className="project-overlay">
-                                        <div className="project-links">
-                                            <a href={project.github} target="_blank" rel="noreferrer" aria-label="GitHub Repo">
-                                                <FaGithub />
-                                            </a>
-                                            <a href={project.demo} target="_blank" rel="noreferrer" aria-label="Live Demo">
-                                                <FaExternalLinkAlt />
-                                            </a>
+                <div className="projects-marquee-container">
+                    <div className="projects-marquee">
+                        <div className="projects-track">
+                            {[...projects, ...projects, ...projects].map((project, index) => (
+                                <div
+                                    key={`${project.id}-${index}`}
+                                    className="project-card"
+                                >
+                                    <div className="project-image">
+                                        <img src={project.image} alt={project.title} />
+                                        <div className="project-overlay">
+                                            <div className="project-links">
+                                                <a href={project.github} target="_blank" rel="noreferrer" aria-label="GitHub Repo">
+                                                    <FaGithub />
+                                                </a>
+                                                <a href={project.demo} target="_blank" rel="noreferrer" aria-label="Live Demo">
+                                                    <FaExternalLinkAlt />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="project-content">
+                                        <h3 className="project-title">{project.title}</h3>
+                                        <p className="project-description">{project.description}</p>
+                                        <div className="project-tech">
+                                            {project.tech.map((tech) => (
+                                                <span key={tech} className="tech-tag">{tech}</span>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
-
-                                <div className="project-content">
-                                    <h3 className="project-title">{project.title}</h3>
-                                    <p className="project-description">{project.description}</p>
-                                    <div className="project-tech">
-                                        {project.tech.map((tech) => (
-                                            <span key={tech} className="tech-tag">{tech}</span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </motion.div>
-                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
 
                 <div className="view-all-container">
                     <a href="#" className="btn btn-outline">{t.projects.viewAll}</a>

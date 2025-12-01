@@ -2,19 +2,48 @@
     background-color: var(--bg-secondary);
 }
 
-.carousel {
-    cursor: grab;
+/* Marquee Styles */
+.projects-marquee-container {
     overflow: hidden;
     margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
 }
 
-.inner-carousel {
+.projects-marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.projects-track {
     display: flex;
     gap: 2rem;
+    animation: scroll-projects 40s linear infinite;
+    width: max-content;
+    padding: 1rem 0;
+}
+
+.projects-marquee:hover .projects-track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-projects {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-33.33% - 1rem));
+        /* Adjust based on duplication factor (3x) */
+    }
 }
 
 .project-card {
-    min-width: 320px;
+    width: 350px;
+    flex-shrink: 0;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;
