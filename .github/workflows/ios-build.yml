@@ -1,33 +1,54 @@
-name: Build iOS App
+name: Build and Deploy iOS App
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-ios:
     runs-on: macos-latest
-
+    
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
 
-      - name: Install Dependencies
-        run: npm install --legacy-peer-deps
+    - name: Install Dependencies
+      run: npm install --legacy-peer-deps
 
-      - name: Build Web Assets
-        run: npm run build
+    - name: Build Web Project
+      run: npm run build
 
-      - name: Sync Capacitor
-        run: npx cap sync ios
+    - name: Setup Capacitor
+      run: |
+        npm install @capacitor/ios
+        npx cap add ios
+        npx cap sync ios
 
-      - name: Build iOS App
-        run: |
-          cd ios/App
-          xcodebuild -workspace App.xcworkspace -scheme App -destination generic/platform=iOS -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+    - name: Build iOS Archive (Unsigned)
+      run: |
+        cd ios/App
+        xcodebuild -workspace App.xcworkspace -scheme App -clean archive -archivePath App.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED=NO
+
+    - name: Export IPA (Payload-based)
+      run: |
+        cd ios/App
+        mkdir Payload
+        cp -r App.xcarchive/Products/Applications/App.app Payload/
+        zip -r App.ipa Payload
+
+    - name: Upload IPA to FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./ios/App/
+        server-dir: /public_html/downloads/
+        include: "App.ipa"

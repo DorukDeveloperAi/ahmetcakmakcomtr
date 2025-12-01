@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.ahmetcakmak.app',
-  appName: 'ahmetcakmak',
+  appId: 'tr.com.ahmetcakmak.portfolio',
+  appName: 'Ahmet Cakmak Portfolio',
   webDir: 'dist'
 };
 
