@@ -33,7 +33,7 @@ const Hero = () => {
                         <a href="#projects" className="btn btn-primary">
                             {t.hero.explore} <FaArrowDown />
                         </a>
-                        <a href="/resume.pdf" className="btn btn-outline" download>
+                        <a href="https://www.kariyer.net/ozgecmis/acumolfk3q" target="_blank" rel="noreferrer" className="btn btn-outline">
                             {t.hero.downloadCv} <FaDownload />
                         </a>
                     </div>
