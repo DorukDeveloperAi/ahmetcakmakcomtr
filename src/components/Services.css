@@ -63,13 +63,6 @@
     margin-left: 1rem;
 }
 
-/* Hide buttons on mobile if needed, or keep them */
-@media (max-width: 768px) {
-    .nav-btn {
-        display: none;
-    }
-}
-
 .project-card {
     min-width: 320px;
     width: 350px;
@@ -283,18 +276,21 @@
 
 .consultancy-btn {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: var(--accent-primary);
-    color: white;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    color: #000000;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
-    transition: background var(--transition-fast), transform var(--transition-fast);
+    transition: all var(--transition-fast);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    border: 2px solid transparent;
 }
 
 .consultancy-btn:hover {
-    background: var(--accent-secondary);
-    transform: scale(1.05);
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Modal Styles */
@@ -378,6 +374,27 @@
 }
 
 @media (max-width: 768px) {
+    .nav-btn {
+        display: none;
+    }
+
+    .projects-carousel-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .projects-track {
+        gap: 1rem;
+    }
+
+    .project-card {
+        min-width: 280px;
+        width: 85vw;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
     .services-categories {
         grid-template-columns: 1fr;
     }
@@ -385,7 +402,8 @@
     .consultancy-cta {
         flex-direction: column;
         text-align: center;
-        padding: 2rem;
+        padding: 1.5rem;
+        gap: 1.5rem;
     }
 
     .consultancy-image {
@@ -406,11 +424,13 @@
     .consultancy-btn {
         display: block;
         width: 100%;
+        text-align: center;
     }
 
     .services-modal-content {
         padding: 1.5rem;
         max-height: 95vh;
+        width: 95%;
     }
 
     .modal-categories {

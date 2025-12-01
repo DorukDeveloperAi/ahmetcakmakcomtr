@@ -25,6 +25,7 @@ export const translations = {
         projects: {
             title: 'Services Provided',
             viewAll: 'Get Consultancy Service',
+            allServicesBtn: 'View All Services',
             items: [
                 {
                     id: 1,
@@ -147,6 +148,7 @@ export const translations = {
         projects: {
             title: 'Vermiş Olduğum Hizmetler',
             viewAll: 'Danışmanlık Hizmeti Al',
+            allServicesBtn: 'Tüm Hizmetleri Görüntüle',
             items: [
                 {
                     id: 1,
@@ -175,7 +177,7 @@ export const translations = {
                 }
             ],
             consultancyCTA: {
-                text: "Profesyonel Bilişim ve Yazılım danışmanlığı ile işinizi bir adım öteye taşıyın.",
+                text: "Profesyonel Bilişim ve Yazılım danışmanlığı ile\nişinizi bir adım öteye taşıyın.",
                 btn: "Danışmanlık Al"
             },
             allServicesList: [
@@ -269,6 +271,7 @@ export const translations = {
         projects: {
             title: 'الخدمات المقدمة',
             viewAll: 'احصل على خدمة استشارية',
+            allServicesBtn: 'عرض جميع الخدمات',
             items: [
                 {
                     id: 1,
@@ -391,6 +394,7 @@ export const translations = {
         projects: {
             title: 'Dienstleistungen',
             viewAll: 'Beratungsservice erhalten',
+            allServicesBtn: 'Alle Dienstleistungen anzeigen',
             items: [
                 {
                     id: 1,
@@ -513,6 +517,7 @@ export const translations = {
         projects: {
             title: 'Предоставляемые услуги',
             viewAll: 'Получить консультацию',
+            allServicesBtn: 'Посмотреть все услуги',
             items: [
                 {
                     id: 1,

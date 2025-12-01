@@ -18,21 +18,21 @@ const Services = () => {
         {
             id: 1,
             tech: ['HTML5', 'CSS3', 'React', 'SEO'],
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop',
+            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop',
             github: 'https://github.com',
             demo: 'https://ahmetcakmak.com.tr'
         },
         {
             id: 2,
             tech: ['Python', 'Django', 'React', 'PostgreSQL'],
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop',
+            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop',
             github: 'https://github.com',
             demo: 'https://ahmetcakmak.com.tr'
         },
         {
             id: 3,
             tech: ['Node.js', 'Analytics', 'API', 'Dashboard'],
-            image: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2670&auto=format&fit=crop',
+            image: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=600&auto=format&fit=crop',
             github: 'https://github.com',
             demo: 'https://ahmetcakmak.com.tr'
         },
@@ -193,11 +193,16 @@ const Services = () => {
 
                 <div className="consultancy-cta">
                     <div className="consultancy-image">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" alt="Consultancy" />
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" alt="Consultancy" />
                     </div>
                     <div className="consultancy-content">
                         <p className="consultancy-text">
-                            {t.projects.consultancyCTA.text}
+                            {t.projects.consultancyCTA.text.split('\n').map((line, i) => (
+                                <React.Fragment key={i}>
+                                    {line}
+                                    {i < t.projects.consultancyCTA.text.split('\n').length - 1 && <br />}
+                                </React.Fragment>
+                            ))}
                         </p>
                     </div>
                     <div className="consultancy-action">
