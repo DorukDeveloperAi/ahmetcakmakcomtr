@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import './App.css';
 import { LanguageProvider } from './context/LanguageContext';
 
+import SEO from './components/SEO';
+
 function App() {
     const [theme, setTheme] = useState('dark');
 
@@ -31,6 +33,7 @@ function App() {
 
     return (
         <LanguageProvider>
+            <SEO />
             <div className="App">
                 <Navbar theme={theme} toggleTheme={toggleTheme} />
                 <main>

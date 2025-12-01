@@ -7,6 +7,11 @@ export const translations = {
             about: 'About',
             contact: 'Contact',
         },
+        meta: {
+            title: 'Ahmet Çakmak - IT Specialist & Full Stack Developer',
+            description: 'Professional IT Specialist and Full Stack Developer offering Website Consultancy, ERP & CRM Solutions, Social Media Management, and AI Integration services.',
+            keywords: 'IT Specialist, Full Stack Developer, Web Development, CRM, ERP, AI Integration, Hardware Consultancy, Ahmet Çakmak',
+        },
         hero: {
             greeting: "Hello, I'm",
             role: 'IT Specialist & Full Stack Developer',
@@ -83,6 +88,11 @@ export const translations = {
             skills: 'Yetenekler',
             about: 'Hakkımda',
             contact: 'İletişim',
+        },
+        meta: {
+            title: 'Ahmet Çakmak - Bilgi İşlem Uzmanı & Full Stack Geliştirici',
+            description: 'Web Site Danışmanlığı, ERP & CRM Çözümleri, Sosyal Medya Yönetimi ve Yapay Zeka Entegrasyonu hizmetleri sunan profesyonel Bilgi İşlem Uzmanı ve Full Stack Geliştirici.',
+            keywords: 'Bilgi İşlem Uzmanı, Full Stack Geliştirici, Web Tasarım, CRM, ERP, Yapay Zeka Entegrasyonu, Donanım Danışmanlığı, Ahmet Çakmak, Bursa Yazılım',
         },
         hero: {
             greeting: "Merhaba, Ben",
@@ -161,6 +171,11 @@ export const translations = {
             about: 'عني',
             contact: 'اتصل بي',
         },
+        meta: {
+            title: 'أحمد تشاكماك - أخصائي تكنولوجيا المعلومات ومطور شامل',
+            description: 'أخصائي تكنولوجيا معلومات محترف ومطور شامل يقدم استشارات المواقع الإلكترونية، حلول ERP & CRM، إدارة وسائل التواصل الاجتماعي، وخدمات تكامل الذكاء الاصطناعي.',
+            keywords: 'أخصائي تكنولوجيا المعلومات, مطور شامل, تطوير الويب, CRM, ERP, تكامل الذكاء الاصطناعي, استشارات الأجهزة, أحمد تشاكماك',
+        },
         hero: {
             greeting: "مرحباً، أنا",
             role: 'أخصائي تكنولوجيا المعلومات ومطور شامل',
@@ -238,6 +253,11 @@ export const translations = {
             about: 'Über mich',
             contact: 'Kontakt',
         },
+        meta: {
+            title: 'Ahmet Çakmak - IT-Spezialist & Full Stack Entwickler',
+            description: 'Professioneller IT-Spezialist und Full Stack Entwickler für Webseiten-Beratung, ERP & CRM-Lösungen, Social Media Management und KI-Integration.',
+            keywords: 'IT-Spezialist, Full Stack Entwickler, Webentwicklung, CRM, ERP, KI-Integration, Hardware-Beratung, Ahmet Çakmak',
+        },
         hero: {
             greeting: "Hallo, ich bin",
             role: 'IT-Spezialist & Full Stack Entwickler',
@@ -314,6 +334,11 @@ export const translations = {
             skills: 'Навыки',
             about: 'Обо мне',
             contact: 'Контакты',
+        },
+        meta: {
+            title: 'Ахмет Чакмак - IT-специалист и Full Stack разработчик',
+            description: 'Профессиональный IT-специалист и Full Stack разработчик, предлагающий консультации по веб-сайтам, решения ERP и CRM, управление социальными сетями и интеграцию ИИ.',
+            keywords: 'IT-специалист, Full Stack разработчик, Веб-разработка, CRM, ERP, Интеграция ИИ, Консалтинг по оборудованию, Ахмет Чакмак',
         },
         hero: {
             greeting: "Привет, я",

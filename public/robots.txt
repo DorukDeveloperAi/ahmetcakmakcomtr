@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahmetcakmak.com.tr/sitemap.xml
