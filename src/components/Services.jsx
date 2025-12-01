@@ -147,20 +147,49 @@ const Services = () => {
                     </button>
                 </div>
 
-                <div className="all-services-section">
-                    <div className="services-categories">
-                        {t.projects.allServicesList && t.projects.allServicesList.map((category, index) => (
-                            <div key={index} className="service-category">
-                                <h4>{category.category}</h4>
-                                <ul>
-                                    {category.items.map((item, idx) => (
-                                        <li key={idx}>{item}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
+                <div className="view-all-container">
+                    <button
+                        className="btn btn-outline"
+                        onClick={toggleAllServices}
+                    >
+                        {t.projects.allServicesBtn || "View All Services"}
+                    </button>
                 </div>
+
+                <AnimatePresence>
+                    {showAllServices && (
+                        <motion.div
+                            className="services-modal-overlay"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={toggleAllServices}
+                        >
+                            <motion.div
+                                className="services-modal-content"
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.8, opacity: 0 }}
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <button className="modal-close-btn" onClick={toggleAllServices}>&times;</button>
+                                <h3 className="modal-title">{t.projects.allServicesBtn || "All Services"}</h3>
+                                <div className="services-categories modal-categories">
+                                    {t.projects.allServicesList && t.projects.allServicesList.map((category, index) => (
+                                        <div key={index} className="service-category">
+                                            <h4>{category.category}</h4>
+                                            <ul>
+                                                {category.items.map((item, idx) => (
+                                                    <li key={idx}>{item}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ))}
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
 
                 <div className="consultancy-cta">
                     <div className="consultancy-image">
