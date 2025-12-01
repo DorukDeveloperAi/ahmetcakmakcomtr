@@ -37,6 +37,11 @@ export const translations = {
                     id: 4,
                     title: 'IT Infrastructure & Hardware Consultancy',
                     description: 'Professional consultancy services for corporate hardware needs, server configuration, and network infrastructure.',
+                },
+                {
+                    id: 5,
+                    title: 'AI Integration & Automation Solutions',
+                    description: 'Integrating advanced AI models and LLMs into business workflows for enhanced automation and efficiency.',
                 }
             ]
         },
@@ -109,6 +114,11 @@ export const translations = {
                     id: 4,
                     title: 'BT Altyapı ve Donanım Danışmanlığı',
                     description: 'Kurumsal donanım ihtiyaçları, sunucu yapılandırması ve ağ altyapısı için profesyonel danışmanlık hizmetleri.',
+                },
+                {
+                    id: 5,
+                    title: 'Yapay Zeka Entegrasyonu ve Otomasyon Çözümleri',
+                    description: 'İş süreçlerini otomatize etmek ve verimliliği artırmak için gelişmiş yapay zeka modellerinin (LLM) entegrasyonu.',
                 }
             ]
         },
@@ -181,6 +191,11 @@ export const translations = {
                     id: 4,
                     title: 'استشارات البنية التحتية وتكنولوجيا المعلومات',
                     description: 'خدمات استشارية احترافية لاحتياجات الأجهزة المؤسسية، وتكوين الخوادم، والبنية التحتية للشبكة.',
+                },
+                {
+                    id: 5,
+                    title: 'حلول تكامل الذكاء الاصطناعي والأتمتة',
+                    description: 'دمج نماذج الذكاء الاصطناعي المتقدمة في سير العمل التجاري لتعزيز الأتمتة والكفاءة.',
                 }
             ]
         },
@@ -253,6 +268,11 @@ export const translations = {
                     id: 4,
                     title: 'IT-Infrastruktur & Hardware-Beratung',
                     description: 'Professionelle Beratungsdienste für Unternehmenshardwarebedarf, Serverkonfiguration und Netzwerkinfrastruktur.',
+                },
+                {
+                    id: 5,
+                    title: 'KI-Integration & Automatisierungslösungen',
+                    description: 'Integration fortschrittlicher KI-Modelle in Geschäftsprozesse zur Steigerung von Automatisierung und Effizienz.',
                 }
             ]
         },
@@ -325,6 +345,11 @@ export const translations = {
                     id: 4,
                     title: 'Консалтинг по IT-инфраструктуре',
                     description: 'Профессиональные консультационные услуги по потребностям в корпоративном оборудовании, настройке серверов и сетевой инфраструктуре.',
+                },
+                {
+                    id: 5,
+                    title: 'Решения по интеграции ИИ и автоматизации',
+                    description: 'Интеграция передовых моделей ИИ в бизнес-процессы для повышения автоматизации и эффективности.',
                 }
             ]
         },

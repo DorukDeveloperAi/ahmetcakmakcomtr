@@ -43,6 +43,13 @@ const Projects = () => {
             image: '/images/hardware_consultancy.png',
             github: 'https://github.com',
             demo: 'https://ahmetcakmak.com.tr'
+        },
+        {
+            id: 5,
+            tech: ['AI', 'LLM', 'Automation', 'Python'],
+            image: '/images/ai_integration.png',
+            github: 'https://github.com',
+            demo: 'https://ahmetcakmak.com.tr'
         }
     ];
 
