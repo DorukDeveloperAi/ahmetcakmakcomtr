@@ -25,7 +25,7 @@ const Projects = () => {
         {
             id: 3,
             tech: ['Node.js', 'Analytics', 'API', 'Dashboard'],
-            image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2574&auto=format&fit=crop',
+            image: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2670&auto=format&fit=crop',
             github: 'https://github.com',
             demo: 'https://demo.com'
         }
