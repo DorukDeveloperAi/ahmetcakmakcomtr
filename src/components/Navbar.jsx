@@ -55,7 +55,7 @@ const Navbar = ({ theme, toggleTheme }) => {
       <div className="container navbar-container">
         <a href="#home" className="logo">
           <FaCode className="logo-icon" />
-          <span>DevPortfolio</span>
+          <span>AHMETCAKMAK</span>
         </a>
 
         <div className="desktop-menu">
