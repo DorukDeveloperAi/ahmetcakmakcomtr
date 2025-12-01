@@ -9,8 +9,8 @@ export const translations = {
         },
         hero: {
             greeting: "Hello, I'm",
-            role: 'Full Stack Developer',
-            bio: 'I build accessible, pixel-perfect, and performant web experiences. Passionate about AI, Machine Learning, and modern UI/UX.',
+            role: 'IT Specialist & Full Stack Developer',
+            bio: 'Over 10 years of experience in IT infrastructure, system administration, and web development. Passionate about Industry 4.0, IoT, and creating efficient digital solutions.',
             explore: 'Explore Projects',
             downloadCv: 'Download CV',
         },
@@ -40,13 +40,14 @@ export const translations = {
         },
         about: {
             title: 'About Me',
-            p1: 'I am a passionate Full Stack Developer with a deep interest in building scalable web applications and exploring the frontiers of AI and Machine Learning. My journey in tech started with a curiosity for how things work, which quickly evolved into a career dedicated to solving complex problems through code.',
-            p2: 'With a background in Computer Science and years of hands-on experience, I bridge the gap between technical complexity and user-centric design. I believe that great software is not just about writing clean code, but about creating intuitive and impactful experiences for users.',
-            p3: "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the developer community. I'm always open to new challenges and collaborations.",
+            p1: 'I graduated from Kocaeli University, Department of Computer Education. I have been working professionally in the field of IT and Software for over 10 years. Throughout my career, I have gained extensive experience in both system/network management and full stack web development.',
+            p2: 'I am particularly interested in modern technologies such as Industry 4.0, IoT (Raspberry Pi, Arduino), Python, and Node.js. I have expertise in corporate network structures, server management (Windows Server, Active Directory), virtualization, and data security (ISO 27001, GDPR).',
+            p3: 'At the same time, I develop web-based ERP/CRM solutions and e-commerce systems using PHP, Javascript, and MySQL/MSSQL technologies. With my problem-solving approach and passion for continuous learning, I aim to create value in every aspect of technology.',
             timeline: [
-                { year: '2024', title: 'Senior Developer', desc: 'Leading frontend architecture at Tech Corp.' },
-                { year: '2022', title: 'Full Stack Engineer', desc: 'Developed scalable APIs and React apps at StartupX.' },
-                { year: '2020', title: 'Junior Developer', desc: 'Started professional journey building web solutions.' },
+                { year: '2022 - Present', title: 'IT Specialist', desc: 'Özel Doruk Nilüfer Hospital - Managing IT infrastructure and systems.' },
+                { year: '2018 - 2022', title: 'IT Specialist', desc: 'Motif Mensucat - Network administration and system support.' },
+                { year: '2018', title: 'Software Specialist', desc: 'Hamzagil Emprime - Developing internal software solutions.' },
+                { year: '2014 - 2018', title: 'IT Specialist', desc: 'Wentual Consultancy - Providing IT consultancy and support.' },
             ]
         },
         contact: {
@@ -75,8 +76,8 @@ export const translations = {
         },
         hero: {
             greeting: "Merhaba, Ben",
-            role: 'Full Stack Geliştirici',
-            bio: 'Erişilebilir, piksel mükemmelliğinde ve performanslı web deneyimleri oluşturuyorum. Yapay Zeka, Makine Öğrenimi ve modern UI/UX konularına tutkuluyum.',
+            role: 'Bilgi İşlem Uzmanı & Full Stack Geliştirici',
+            bio: 'BT altyapısı, sistem yönetimi ve web geliştirme alanlarında 10 yılı aşkın deneyim. Endüstri 4.0, IoT ve verimli dijital çözümler üretme konusunda tutkulu.',
             explore: 'Projeleri Keşfet',
             downloadCv: 'CV İndir',
         },
@@ -106,13 +107,14 @@ export const translations = {
         },
         about: {
             title: 'Hakkımda',
-            p1: 'Ölçeklenebilir web uygulamaları oluşturmaya ve Yapay Zeka ile Makine Öğreniminin sınırlarını keşfetmeye derin bir ilgi duyan tutkulu bir Full Stack Geliştiriciyim. Teknoloji yolculuğum, işlerin nasıl yürüdüğüne dair bir merakla başladı ve hızla kod aracılığıyla karmaşık sorunları çözmeye adanmış bir kariyere dönüştü.',
-            p2: 'Bilgisayar Bilimleri geçmişim ve yıllara dayanan pratik deneyimimle, teknik karmaşıklık ile kullanıcı odaklı tasarım arasındaki boşluğu dolduruyorum. Harika bir yazılımın sadece temiz kod yazmakla ilgili olmadığına, aynı zamanda kullanıcılar için sezgisel ve etkileyici deneyimler yaratmak olduğuna inanıyorum.',
-            p3: "Kod yazmadığım zamanlarda beni yeni teknolojileri keşfederken, açık kaynaklı projelere katkıda bulunurken veya bilgilerimi geliştirici topluluğuyla paylaşırken bulabilirsiniz. Yeni zorluklara ve işbirliklerine her zaman açığım.",
+            p1: 'Kocaeli Üniversitesi Bilgisayar Öğretmenliği mezunuyum. 10 yılı aşkın süredir Bilgi İşlem ve Yazılım alanında profesyonel olarak çalışmaktayım. Kariyerim boyunca hem sistem/ağ yönetimi hem de full stack web geliştirme konularında geniş bir tecrübe edindim.',
+            p2: 'Özellikle Endüstri 4.0, IoT (Raspberry Pi, Arduino), Python ve Node.js gibi modern teknolojilere ilgi duyuyorum. Kurumsal ağ yapıları, sunucu yönetimi (Windows Server, Active Directory), sanallaştırma ve veri güvenliği (ISO 27001, KVKK) konularında uzmanlığım bulunmaktadır.',
+            p3: 'Aynı zamanda PHP, Javascript, MySQL/MSSQL teknolojileriyle web tabanlı ERP/CRM çözümleri ve e-ticaret sistemleri geliştiriyorum. Sorun çözme odaklı yaklaşımım ve sürekli öğrenme tutkumla, teknolojinin her alanında değer üretmeyi hedefliyorum.',
             timeline: [
-                { year: '2024', title: 'Kıdemli Geliştirici', desc: 'Tech Corp şirketinde frontend mimarisine liderlik ediyorum.' },
-                { year: '2022', title: 'Full Stack Mühendis', desc: 'StartupX\'te ölçeklenebilir API\'ler ve React uygulamaları geliştirdim.' },
-                { year: '2020', title: 'Junior Geliştirici', desc: 'Web çözümleri üreterek profesyonel yolculuğuma başladım.' },
+                { year: '2022 - Halen', title: 'Bilgi İşlem Uzmanı', desc: 'Özel Doruk Nilüfer Hastanesi - BT altyapı ve sistem yönetimi.' },
+                { year: '2018 - 2022', title: 'Bilgi İşlem Uzmanı', desc: 'Motif Mensucat - Ağ yönetimi ve sistem desteği.' },
+                { year: '2018', title: 'Yazılım Uzmanı', desc: 'Hamzagil Emprime - Kurum içi yazılım çözümleri geliştirme.' },
+                { year: '2014 - 2018', title: 'Bilgi İşlem Uzmanı', desc: 'Wentual Danışmanlık - BT danışmanlığı ve desteği.' },
             ]
         },
         contact: {
@@ -141,8 +143,8 @@ export const translations = {
         },
         hero: {
             greeting: "مرحباً، أنا",
-            role: 'مطور ويب شامل',
-            bio: 'أقوم ببناء تجارب ويب سهلة الوصول، دقيقة الأداء، وعالية الجودة. شغوف بالذكاء الاصطناعي، تعلم الآلة، وتصميم واجهات المستخدم الحديثة.',
+            role: 'أخصائي تكنولوجيا المعلومات ومطور شامل',
+            bio: 'أكثر من 10 سنوات من الخبرة في البنية التحتية لتكنولوجيا المعلومات، إدارة الأنظمة، وتطوير الويب. شغوف بالصناعة 4.0، إنترنت الأشياء، وإنشاء حلول رقمية فعالة.',
             explore: 'استكشف المشاريع',
             downloadCv: 'تحميل السيرة الذاتية',
         },
@@ -172,13 +174,14 @@ export const translations = {
         },
         about: {
             title: 'عني',
-            p1: 'أنا مطور ويب شامل شغوف ولدي اهتمام عميق ببناء تطبيقات ويب قابلة للتوسع واستكشاف حدود الذكاء الاصطناعي وتعلم الآلة. بدأت رحلتي في التكنولوجيا بفضول حول كيفية عمل الأشياء، وتطورت بسرعة إلى مهنة مكرسة لحل المشكلات المعقدة من خلال البرمجة.',
-            p2: 'مع خلفية في علوم الكمبيوتر وسنوات من الخبرة العملية، أقوم بسد الفجوة بين التعقيد التقني والتصميم الذي يركز على المستخدم. أؤمن أن البرمجيات العظيمة لا تتعلق فقط بكتابة كود نظيف، بل بخلق تجارب بديهية ومؤثرة للمستخدمين.',
-            p3: "عندما لا أكتب الكود، يمكنك أن تجدني أستكشف تقنيات جديدة، أساهم في مشاريع مفتوحة المصدر، أو أشارك معرفتي مع مجتمع المطورين. أنا دائماً منفتح على تحديات وتعاونات جديدة.",
+            p1: 'تخرجت من جامعة كوجالي، قسم تعليم الكمبيوتر. أعمل بشكل احترافي في مجال تكنولوجيا المعلومات والبرمجيات لأكثر من 10 سنوات. طوال مسيرتي المهنية، اكتسبت خبرة واسعة في كل من إدارة الأنظمة/الشبكات وتطوير الويب الشامل.',
+            p2: 'أهتم بشكل خاص بالتقنيات الحديثة مثل الصناعة 4.0، إنترنت الأشياء (Raspberry Pi, Arduino)، بايثون، و Node.js. لدي خبرة في هياكل الشبكات المؤسسية، إدارة الخوادم (Windows Server, Active Directory)، المحاكاة الافتراضية، وأمن البيانات.',
+            p3: 'في الوقت نفسه، أقوم بتطوير حلول ERP/CRM المستندة إلى الويب وأنظمة التجارة الإلكترونية باستخدام تقنيات PHP و Javascript و MySQL/MSSQL. من خلال نهجي الموجه نحو حل المشكلات وشغفي بالتعلم المستمر، أهدف إلى خلق قيمة في كل جانب من جوانب التكنولوجيا.',
             timeline: [
-                { year: '2024', title: 'مطور أول', desc: 'قيادة هندسة الواجهة الأمامية في Tech Corp.' },
-                { year: '2022', title: 'مهندس ويب شامل', desc: 'تطوير واجهات برمجة تطبيقات قابلة للتوسع وتطبيقات React في StartupX.' },
-                { year: '2020', title: 'مطور مبتدئ', desc: 'بدأت رحلتي المهنية ببناء حلول الويب.' },
+                { year: '2022 - الحاضر', title: 'أخصائي تكنولوجيا المعلومات', desc: 'مستشفى دوروك نيلوفر الخاص - إدارة البنية التحتية والأنظمة.' },
+                { year: '2018 - 2022', title: 'أخصائي تكنولوجيا المعلومات', desc: 'Motif Mensucat - إدارة الشبكات ودعم الأنظمة.' },
+                { year: '2018', title: 'أخصائي برمجيات', desc: 'Hamzagil Emprime - تطوير حلول برمجية داخلية.' },
+                { year: '2014 - 2018', title: 'أخصائي تكنولوجيا المعلومات', desc: 'Wentual Consultancy - تقديم استشارات ودعم تكنولوجيا المعلومات.' },
             ]
         },
         contact: {
