@@ -28,6 +28,13 @@ const Projects = () => {
             image: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2670&auto=format&fit=crop',
             github: 'https://github.com',
             demo: 'https://demo.com'
+        },
+        {
+            id: 4,
+            tech: ['Hardware', 'Network', 'Server', 'Security'],
+            image: 'https://images.unsplash.com/photo-1558494949-efc52728101c?q=80&w=2648&auto=format&fit=crop',
+            github: 'https://github.com',
+            demo: 'https://demo.com'
         }
     ];
 
