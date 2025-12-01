@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import './Contact.css';
 
@@ -34,6 +34,9 @@ const Contact = () => {
                         <div className="contact-links">
                             <a href="mailto:kamkactemha@hotmail.com" className="contact-link">
                                 <FaEnvelope /> kamkactemha@hotmail.com
+                            </a>
+                            <a href="https://wa.me/905317626327" className="contact-link" target="_blank" rel="noreferrer">
+                                <FaWhatsapp /> +90 531 762 63 27
                             </a>
                             <div className="social-icons">
                                 <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a>
