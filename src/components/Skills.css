@@ -1,0 +1,57 @@
+.skills-section {
+    background-color: var(--bg-primary);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    min-width: 120px;
+    transition: all var(--transition-fast);
+    cursor: default;
+}
+
+.skill-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 20px var(--accent-glow);
+    background: var(--bg-tertiary);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    transition: transform var(--transition-fast);
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-name {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.skill-card:hover .skill-name {
+    color: var(--text-primary);
+}
+
+/* Handle Next.js icon visibility in dark mode if needed */
+[data-theme='dark'] .skill-icon svg {
+    /* If the icon is black, we might need to invert it or use a different color. 
+     Since we set color inline, it should be fine, but Next.js brand is black/white.
+     Let's handle it by checking the specific color in JSX or just letting it be.
+     Actually, for Next.js, white is better in dark mode. */
+}
