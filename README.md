@@ -1,6 +1,6 @@
 # Profesyonel Geliştirici Portföyü (Professional Developer Portfolio)
 
-React, Vite ve Framer Motion kullanılarak oluşturulmuş, çok dilli (Türkçe, İngilizce, Arapça) ve modern bir kişisel portföy web sitesi.
+React, Vite ve Framer Motion kullanılarak oluşturulmuş, çok dilli (Türkçe, İngilizce, Arapça, Almanca, Rusça) ve modern bir kişisel portföy web sitesi.
 
 Canlı Demo: [ahmetcakmak.com.tr](http://ahmetcakmak.com.tr)
 
@@ -8,7 +8,7 @@ Canlı Demo: [ahmetcakmak.com.tr](http://ahmetcakmak.com.tr)
 
 *   **Modern Teknoloji Yığını:** React 18, Vite, Framer Motion.
 *   **Çoklu Dil Desteği (i18n):**
-    *   Türkçe (TR), İngilizce (EN) ve Arapça (AR) desteği.
+    *   **5 Dil Desteği:** Türkçe (TR), İngilizce (EN), Arapça (AR), Almanca (DE) ve Rusça (RU).
     *   Arapça için otomatik **RTL (Sağdan Sola)** düzen desteği.
     *   Bayraklı ve açılır menülü (dropdown) dil seçici.
     *   Dil tercihi tarayıcı hafızasında (localStorage) saklanır.
