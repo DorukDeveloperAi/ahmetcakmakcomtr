@@ -1,36 +1,70 @@
 .skills-section {
     background-color: var(--bg-primary);
+    overflow: hidden;
+    /* Prevent horizontal scrollbar on page */
 }
 
-.skills-grid {
+.full-width-container {
+    max-width: 100% !important;
+    padding: 0;
+    overflow: hidden;
+}
+
+.skills-marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 2rem;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .skill-card {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2.5rem;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    min-width: 120px;
+    min-width: 160px;
     transition: all var(--transition-fast);
     cursor: default;
+    flex-shrink: 0;
+    /* Prevent shrinking in flex container */
 }
 
 .skill-card:hover {
     border-color: var(--accent-primary);
     box-shadow: 0 4px 20px var(--accent-glow);
     background: var(--bg-tertiary);
+    transform: translateY(-5px);
 }
 
 .skill-icon {
-    font-size: 3rem;
+    font-size: 3.5rem;
     transition: transform var(--transition-fast);
 }
 
@@ -41,17 +75,28 @@
 .skill-name {
     font-weight: 600;
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    white-space: nowrap;
 }
 
 .skill-card:hover .skill-name {
     color: var(--text-primary);
 }
 
-/* Handle Next.js icon visibility in dark mode if needed */
-[data-theme='dark'] .skill-icon svg {
-    /* If the icon is black, we might need to invert it or use a different color. 
-     Since we set color inline, it should be fine, but Next.js brand is black/white.
-     Let's handle it by checking the specific color in JSX or just letting it be.
-     Actually, for Next.js, white is better in dark mode. */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .marquee-track {
+        animation-duration: 30s;
+        /* Faster on mobile or same speed visually */
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1rem 1.5rem;
+        min-width: 130px;
+    }
+
+    .skill-icon {
+        font-size: 2.5rem;
+    }
 }
