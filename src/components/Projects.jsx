@@ -40,7 +40,7 @@ const Projects = () => {
         {
             id: 4,
             tech: ['Hardware', 'Network', 'Server', 'Security'],
-            image: 'https://images.unsplash.com/photo-1558494949-efc52728101c?q=80&w=2648&auto=format&fit=crop',
+            image: '/images/hardware_consultancy.png',
             github: 'https://github.com',
             demo: 'https://demo.com'
         }
