@@ -41,8 +41,8 @@ export const translations = {
         about: {
             title: 'About Me',
             p1: 'I graduated from Kocaeli University, Department of Computer Education. I have been working professionally in the field of IT and Software for over 10 years. Throughout my career, I have gained extensive experience in both system/network management and full stack web development.',
-            p2: 'I am particularly interested in modern technologies such as Industry 4.0, IoT (Raspberry Pi, Arduino), Python, and Node.js. I have expertise in corporate network structures, server management (Windows Server, Active Directory), virtualization, and data security (ISO 27001, GDPR).',
-            p3: 'At the same time, I develop web-based ERP/CRM solutions and e-commerce systems using PHP, Javascript, and MySQL/MSSQL technologies. With my problem-solving approach and passion for continuous learning, I aim to create value in every aspect of technology.',
+            p2: 'I have expertise in corporate network structures, server management (Windows Server, Active Directory), virtualization, and data security. Simultaneously, I develop web-based ERP/CRM solutions using PHP, Javascript, and MySQL/MSSQL technologies.',
+            p3: "My passion for Artificial Intelligence and Machine Learning constantly drives me to explore next-generation tools. I am actively working with advanced AI systems like 'Antigravity' and autonomous coding assistants, experiencing firsthand how these technologies transform software development processes. By integrating future technologies into my projects today, I create smarter and more efficient solutions.",
             timeline: [
                 { year: '2022 - Present', title: 'IT Specialist', desc: 'Özel Doruk Nilüfer Hospital - Managing IT infrastructure and systems.' },
                 { year: '2018 - 2022', title: 'IT Specialist', desc: 'Motif Mensucat - Network administration and system support.' },
@@ -108,8 +108,8 @@ export const translations = {
         about: {
             title: 'Hakkımda',
             p1: 'Kocaeli Üniversitesi Bilgisayar Öğretmenliği mezunuyum. 10 yılı aşkın süredir Bilgi İşlem ve Yazılım alanında profesyonel olarak çalışmaktayım. Kariyerim boyunca hem sistem/ağ yönetimi hem de full stack web geliştirme konularında geniş bir tecrübe edindim.',
-            p2: 'Özellikle Endüstri 4.0, IoT (Raspberry Pi, Arduino), Python ve Node.js gibi modern teknolojilere ilgi duyuyorum. Kurumsal ağ yapıları, sunucu yönetimi (Windows Server, Active Directory), sanallaştırma ve veri güvenliği (ISO 27001, KVKK) konularında uzmanlığım bulunmaktadır.',
-            p3: 'Aynı zamanda PHP, Javascript, MySQL/MSSQL teknolojileriyle web tabanlı ERP/CRM çözümleri ve e-ticaret sistemleri geliştiriyorum. Sorun çözme odaklı yaklaşımım ve sürekli öğrenme tutkumla, teknolojinin her alanında değer üretmeyi hedefliyorum.',
+            p2: 'Kurumsal ağ yapıları, sunucu yönetimi (Windows Server, Active Directory), sanallaştırma ve veri güvenliği konularında uzmanlığım bulunmaktadır. Aynı zamanda PHP, Javascript, MySQL/MSSQL teknolojileriyle web tabanlı ERP/CRM çözümleri geliştiriyorum.',
+            p3: "Yapay Zeka ve Makine Öğrenimi teknolojilerine olan tutkum, beni sürekli yeni nesil araçları keşfetmeye yöneltiyor. Özellikle 'Antigravity' gibi gelişmiş yapay zeka sistemleri ve otonom kodlama asistanları üzerine çalışmalar yürütüyor; bu teknolojilerin yazılım geliştirme süreçlerini nasıl dönüştürdüğünü deneyimliyorum. Geleceğin teknolojilerini bugünden projelerime entegre ederek, daha akıllı ve verimli çözümler üretiyorum.",
             timeline: [
                 { year: '2022 - Halen', title: 'Bilgi İşlem Uzmanı', desc: 'Özel Doruk Nilüfer Hastanesi - BT altyapı ve sistem yönetimi.' },
                 { year: '2018 - 2022', title: 'Bilgi İşlem Uzmanı', desc: 'Motif Mensucat - Ağ yönetimi ve sistem desteği.' },
@@ -175,8 +175,8 @@ export const translations = {
         about: {
             title: 'عني',
             p1: 'تخرجت من جامعة كوجالي، قسم تعليم الكمبيوتر. أعمل بشكل احترافي في مجال تكنولوجيا المعلومات والبرمجيات لأكثر من 10 سنوات. طوال مسيرتي المهنية، اكتسبت خبرة واسعة في كل من إدارة الأنظمة/الشبكات وتطوير الويب الشامل.',
-            p2: 'أهتم بشكل خاص بالتقنيات الحديثة مثل الصناعة 4.0، إنترنت الأشياء (Raspberry Pi, Arduino)، بايثون، و Node.js. لدي خبرة في هياكل الشبكات المؤسسية، إدارة الخوادم (Windows Server, Active Directory)، المحاكاة الافتراضية، وأمن البيانات.',
-            p3: 'في الوقت نفسه، أقوم بتطوير حلول ERP/CRM المستندة إلى الويب وأنظمة التجارة الإلكترونية باستخدام تقنيات PHP و Javascript و MySQL/MSSQL. من خلال نهجي الموجه نحو حل المشكلات وشغفي بالتعلم المستمر، أهدف إلى خلق قيمة في كل جانب من جوانب التكنولوجيا.',
+            p2: 'لدي خبرة في هياكل الشبكات المؤسسية، إدارة الخوادم (Windows Server, Active Directory)، المحاكاة الافتراضية، وأمن البيانات. في الوقت نفسه، أقوم بتطوير حلول ERP/CRM المستندة إلى الويب باستخدام تقنيات PHP و Javascript و MySQL/MSSQL.',
+            p3: "شغفي بالذكاء الاصطناعي وتعلم الآلة يدفعني باستمرار لاستكشاف أدوات الجيل القادم. أعمل بنشاط مع أنظمة الذكاء الاصطناعي المتقدمة مثل 'Antigravity' ومساعدي البرمجة المستقلين، وأختبر بشكل مباشر كيف تحول هذه التقنيات عمليات تطوير البرمجيات. من خلال دمج تقنيات المستقبل في مشاريعي اليوم، أقوم بإنشاء حلول أكثر ذكاءً وكفاءة.",
             timeline: [
                 { year: '2022 - الحاضر', title: 'أخصائي تكنولوجيا المعلومات', desc: 'مستشفى دوروك نيلوفر الخاص - إدارة البنية التحتية والأنظمة.' },
                 { year: '2018 - 2022', title: 'أخصائي تكنولوجيا المعلومات', desc: 'Motif Mensucat - إدارة الشبكات ودعم الأنظمة.' },
