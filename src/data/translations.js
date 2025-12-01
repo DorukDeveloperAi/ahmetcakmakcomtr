@@ -15,7 +15,7 @@ export const translations = {
             downloadCv: 'Download CV',
         },
         projects: {
-            title: 'Featured Projects',
+            title: 'Services Provided',
             viewAll: 'View All Projects',
             items: [
                 {
@@ -87,7 +87,7 @@ export const translations = {
             downloadCv: 'CV İndir',
         },
         projects: {
-            title: 'Öne Çıkan Projeler',
+            title: 'Vermiş Olduğum Hizmetler',
             viewAll: 'Tüm Projeleri Gör',
             items: [
                 {
@@ -159,7 +159,7 @@ export const translations = {
             downloadCv: 'تحميل السيرة الذاتية',
         },
         projects: {
-            title: 'مشاريع مميزة',
+            title: 'الخدمات المقدمة',
             viewAll: 'عرض جميع المشاريع',
             items: [
                 {
@@ -231,7 +231,7 @@ export const translations = {
             downloadCv: 'Lebenslauf herunterladen',
         },
         projects: {
-            title: 'Ausgewählte Projekte',
+            title: 'Dienstleistungen',
             viewAll: 'Alle Projekte anzeigen',
             items: [
                 {
@@ -303,7 +303,7 @@ export const translations = {
             downloadCv: 'Скачать резюме',
         },
         projects: {
-            title: 'Избранные проекты',
+            title: 'Предоставляемые услуги',
             viewAll: 'Посмотреть все проекты',
             items: [
                 {

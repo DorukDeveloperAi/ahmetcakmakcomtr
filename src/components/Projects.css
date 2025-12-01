@@ -2,14 +2,19 @@
     background-color: var(--bg-secondary);
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.carousel {
+    cursor: grab;
+    overflow: hidden;
     margin-bottom: 3rem;
 }
 
+.inner-carousel {
+    display: flex;
+    gap: 2rem;
+}
+
 .project-card {
+    min-width: 320px;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;

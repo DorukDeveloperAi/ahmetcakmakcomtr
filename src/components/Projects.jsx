@@ -6,6 +6,14 @@ import './Projects.css';
 
 const Projects = () => {
     const { t } = useLanguage();
+    const [width, setWidth] = React.useState(0);
+    const carousel = React.useRef();
+
+    React.useEffect(() => {
+        if (carousel.current) {
+            setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+        }
+    }, [t.projects.items]); // Recalculate when items change
 
     const staticProjectData = [
         {
@@ -55,42 +63,44 @@ const Projects = () => {
                     {t.projects.title}
                 </motion.h2>
 
-                <div className="projects-grid">
-                    {projects.map((project, index) => (
-                        <motion.div
-                            key={project.id}
-                            className="project-card"
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                        >
-                            <div className="project-image">
-                                <img src={project.image} alt={project.title} />
-                                <div className="project-overlay">
-                                    <div className="project-links">
-                                        <a href={project.github} target="_blank" rel="noreferrer" aria-label="GitHub Repo">
-                                            <FaGithub />
-                                        </a>
-                                        <a href={project.demo} target="_blank" rel="noreferrer" aria-label="Live Demo">
-                                            <FaExternalLinkAlt />
-                                        </a>
+                <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
+                    <motion.div
+                        drag="x"
+                        dragConstraints={{ right: 0, left: -width }}
+                        className="inner-carousel"
+                    >
+                        {projects.map((project) => (
+                            <motion.div
+                                key={project.id}
+                                className="project-card"
+                            >
+                                <div className="project-image">
+                                    <img src={project.image} alt={project.title} />
+                                    <div className="project-overlay">
+                                        <div className="project-links">
+                                            <a href={project.github} target="_blank" rel="noreferrer" aria-label="GitHub Repo">
+                                                <FaGithub />
+                                            </a>
+                                            <a href={project.demo} target="_blank" rel="noreferrer" aria-label="Live Demo">
+                                                <FaExternalLinkAlt />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="project-content">
-                                <h3 className="project-title">{project.title}</h3>
-                                <p className="project-description">{project.description}</p>
-                                <div className="project-tech">
-                                    {project.tech.map((tech) => (
-                                        <span key={tech} className="tech-tag">{tech}</span>
-                                    ))}
+                                <div className="project-content">
+                                    <h3 className="project-title">{project.title}</h3>
+                                    <p className="project-description">{project.description}</p>
+                                    <div className="project-tech">
+                                        {project.tech.map((tech) => (
+                                            <span key={tech} className="tech-tag">{tech}</span>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                </motion.div>
 
                 <div className="view-all-container">
                     <a href="#" className="btn btn-outline">{t.projects.viewAll}</a>
