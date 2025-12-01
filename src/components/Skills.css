@@ -1,7 +1,6 @@
 .skills-section {
     background-color: var(--bg-primary);
     overflow: hidden;
-    /* Prevent horizontal scrollbar on page */
 }
 
 .full-width-container {
@@ -10,11 +9,19 @@
     overflow: hidden;
 }
 
+.skills-marquee-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Space between the two rows */
+    padding-bottom: 2rem;
+}
+
 .skills-marquee {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding: 2rem 0;
+    padding: 1rem 0;
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
@@ -24,6 +31,11 @@
     gap: 2rem;
     width: max-content;
     animation: scroll 40s linear infinite;
+}
+
+/* Reverse animation for the second row */
+.skills-marquee.reverse .marquee-track {
+    animation-direction: reverse;
 }
 
 .marquee-track:hover {
@@ -36,7 +48,8 @@
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-33.33%);
+        /* Adjusted for 3x duplication */
     }
 }
 
@@ -53,7 +66,6 @@
     transition: all var(--transition-fast);
     cursor: default;
     flex-shrink: 0;
-    /* Prevent shrinking in flex container */
 }
 
 .skill-card:hover {
@@ -61,6 +73,8 @@
     box-shadow: 0 4px 20px var(--accent-glow);
     background: var(--bg-tertiary);
     transform: translateY(-5px);
+    z-index: 1;
+    /* Bring to front on hover */
 }
 
 .skill-icon {
@@ -87,7 +101,6 @@
 @media (max-width: 768px) {
     .marquee-track {
         animation-duration: 30s;
-        /* Faster on mobile or same speed visually */
         gap: 1.5rem;
     }
 
@@ -98,5 +111,9 @@
 
     .skill-icon {
         font-size: 2.5rem;
+    }
+
+    .skills-marquee-container {
+        gap: 1.5rem;
     }
 }
