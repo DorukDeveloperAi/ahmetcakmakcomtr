@@ -21,28 +21,28 @@ const Projects = () => {
             tech: ['HTML5', 'CSS3', 'React', 'SEO'],
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop',
             github: 'https://github.com',
-            demo: 'https://demo.com'
+            demo: 'https://ahmetcakmak.com.tr'
         },
         {
             id: 2,
             tech: ['Python', 'Django', 'React', 'PostgreSQL'],
             image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop',
             github: 'https://github.com',
-            demo: 'https://demo.com'
+            demo: 'https://ahmetcakmak.com.tr'
         },
         {
             id: 3,
             tech: ['Node.js', 'Analytics', 'API', 'Dashboard'],
             image: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2670&auto=format&fit=crop',
             github: 'https://github.com',
-            demo: 'https://demo.com'
+            demo: 'https://ahmetcakmak.com.tr'
         },
         {
             id: 4,
             tech: ['Hardware', 'Network', 'Server', 'Security'],
             image: '/images/hardware_consultancy.png',
             github: 'https://github.com',
-            demo: 'https://demo.com'
+            demo: 'https://ahmetcakmak.com.tr'
         }
     ];
 
