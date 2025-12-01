@@ -95,6 +95,15 @@ export const translations = {
         },
         about: {
             title: 'About Me',
+            p1: 'I am a graduate of Kocaeli University Computer Education. I have been working professionally in the IT and Software field for over 10 years. Throughout my career, I have gained extensive experience in both system/network administration and full stack web development.',
+            p2: 'I specialize in corporate network structures, server management (Windows Server, Active Directory), virtualization, and data security. I also develop web-based ERP/CRM solutions using PHP, Javascript, and MySQL/MSSQL technologies.',
+            p3: "My passion for Artificial Intelligence and Machine Learning technologies drives me to constantly explore next-generation tools. I specifically work on advanced AI systems and autonomous coding assistants like 'Antigravity', experiencing how these technologies transform software development processes. By integrating future technologies into my projects today, I create smarter and more efficient solutions.",
+            timeline: [
+                { year: '2022 - Present', title: 'IT Specialist', desc: 'Private Doruk Nilüfer Hospital - IT infrastructure and system management.' },
+                { year: '2018 - 2022', title: 'IT Specialist', desc: 'Motif Mensucat - Network management and system support.' },
+                { year: '2018 - 2018', title: 'Software Specialist', desc: 'Hamzagil Emprime - Developing in-house software solutions.' },
+                { year: '2012 - 2018', title: 'IT Specialist', desc: 'Ente Tanıtım - IT support and system management.' },
+            ],
             subtitle: "Let's Talk",
             desc: "I'm currently available for freelance work and open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
             form: {
