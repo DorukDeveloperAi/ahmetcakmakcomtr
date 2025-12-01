@@ -12,14 +12,60 @@
     text-align: center;
 }
 
+.footer-downloads {
+    margin-bottom: 1.5rem;
+}
+
+.footer-downloads h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    border: 1px solid var(--border-color);
+}
+
+.download-btn.android {
+    background-color: #3ddc84;
+    color: #000;
+    border-color: #3ddc84;
+}
+
+.download-btn.ios {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 .footer-socials {
     display: flex;
     gap: 1.5rem;
 }
 
 .footer-socials a {
-    font-size: 1.5rem;
     color: var(--text-secondary);
+    font-size: 1.5rem;
     transition: color var(--transition-fast);
 }
 
@@ -37,15 +83,16 @@
     font-size: 0.9rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 }
 
 .heart-icon {
-    color: #ef4444;
-    animation: beat 1s infinite;
+    color: #ff4d4d;
+    animation: heartbeat 1.5s infinite;
 }
 
-@keyframes beat {
+@keyframes heartbeat {
 
     0%,
     100% {
@@ -53,6 +100,6 @@
     }
 
     50% {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }

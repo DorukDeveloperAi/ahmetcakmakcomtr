@@ -6,6 +6,9 @@ export const translations = {
             skills: 'Skills',
             about: 'About',
             contact: 'Contact',
+            downloadApp: 'Download App',
+            android: 'Android',
+            ios: 'iOS',
         },
         meta: {
             title: 'Ahmet Çakmak - IT Specialist & Full Stack Developer',
@@ -88,6 +91,9 @@ export const translations = {
             skills: 'Yetenekler',
             about: 'Hakkımda',
             contact: 'İletişim',
+            downloadApp: 'Uygulamayı İndir',
+            android: 'Android',
+            ios: 'iOS',
         },
         meta: {
             title: 'Ahmet Çakmak - Bilgi İşlem Uzmanı & Full Stack Geliştirici',
@@ -170,6 +176,9 @@ export const translations = {
             skills: 'المهارات',
             about: 'عني',
             contact: 'اتصل بي',
+            downloadApp: 'تحميل التطبيق',
+            android: 'Android',
+            ios: 'iOS',
         },
         meta: {
             title: 'أحمد تشاكماك - أخصائي تكنولوجيا المعلومات ومطور شامل',
@@ -252,6 +261,9 @@ export const translations = {
             skills: 'Fähigkeiten',
             about: 'Über mich',
             contact: 'Kontakt',
+            downloadApp: 'App herunterladen',
+            android: 'Android',
+            ios: 'iOS',
         },
         meta: {
             title: 'Ahmet Çakmak - IT-Spezialist & Full Stack Entwickler',
@@ -334,6 +346,9 @@ export const translations = {
             skills: 'Навыки',
             about: 'Обо мне',
             contact: 'Контакты',
+            downloadApp: 'Скачать приложение',
+            android: 'Android',
+            ios: 'iOS',
         },
         meta: {
             title: 'Ахмет Чакмак - IT-специалист и Full Stack разработчик',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaYoutube, FaInstagram, FaAndroid, FaApple } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import './Footer.css';
 
@@ -9,6 +9,18 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container footer-container">
+                <div className="footer-downloads">
+                    <h3>{t.nav.downloadApp}</h3>
+                    <div className="download-buttons">
+                        <a href="/app-release.apk" className="download-btn android" download>
+                            <FaAndroid /> <span>{t.nav.android}</span>
+                        </a>
+                        <a href="#" className="download-btn ios" onClick={(e) => { e.preventDefault(); alert('iOS App Coming Soon!'); }}>
+                            <FaApple /> <span>{t.nav.ios}</span>
+                        </a>
+                    </div>
+                </div>
+
                 <div className="footer-socials">
                     <a href="https://www.youtube.com/@dolunay86" target="_blank" rel="noreferrer"><FaYoutube /></a>
                     <a href="https://www.instagram.com/dolunayim86/" target="_blank" rel="noreferrer"><FaInstagram /></a>
