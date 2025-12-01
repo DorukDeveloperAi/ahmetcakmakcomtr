@@ -58,18 +58,6 @@ export const translations = {
         },
         about: {
             title: 'About Me',
-            p1: 'I graduated from Kocaeli University, Department of Computer Education. I have been working professionally in the field of IT and Software for over 10 years. Throughout my career, I have gained extensive experience in both system/network management and full stack web development.',
-            p2: 'I have expertise in corporate network structures, server management (Windows Server, Active Directory), virtualization, and data security. Simultaneously, I develop web-based ERP/CRM solutions using PHP, Javascript, and MySQL/MSSQL technologies.',
-            p3: "My passion for Artificial Intelligence and Machine Learning constantly drives me to explore next-generation tools. I am actively working with advanced AI systems like 'Antigravity' and autonomous coding assistants, experiencing firsthand how these technologies transform software development processes. By integrating future technologies into my projects today, I create smarter and more efficient solutions.",
-            timeline: [
-                { year: '2022 - Present', title: 'IT Specialist', desc: 'Özel Doruk Nilüfer Hospital - Managing IT infrastructure and systems.' },
-                { year: '2018 - 2022', title: 'IT Specialist', desc: 'Motif Mensucat - Network administration and system support.' },
-                { year: '2018', title: 'Software Specialist', desc: 'Hamzagil Emprime - Developing internal software solutions.' },
-                { year: '2012 - 2018', title: 'IT Specialist', desc: 'Ente Tanıtım - IT infrastructure and support.' },
-            ]
-        },
-        contact: {
-            title: 'Get In Touch',
             subtitle: "Let's Talk",
             desc: "I'm currently available for freelance work and open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
             form: {
@@ -149,7 +137,7 @@ export const translations = {
             timeline: [
                 { year: '2022 - Halen', title: 'Bilgi İşlem Uzmanı', desc: 'Özel Doruk Nilüfer Hastanesi - BT altyapı ve sistem yönetimi.' },
                 { year: '2018 - 2022', title: 'Bilgi İşlem Uzmanı', desc: 'Motif Mensucat - Ağ yönetimi ve sistem desteği.' },
-                { year: '2018', title: 'Yazılım Uzmanı', desc: 'Hamzagil Emprime - Kurum içi yazılım çözümleri geliştirme.' },
+                { year: '2018 - 2018', title: 'Yazılım Uzmanı', desc: 'Hamzagil Emprime - Kurum içi yazılım çözümleri geliştirme.' },
                 { year: '2012 - 2018', title: 'Bilgi İşlem Uzmanı', desc: 'Ente Tanıtım - BT desteği ve sistem yönetimi.' },
             ]
         },
@@ -234,7 +222,7 @@ export const translations = {
             timeline: [
                 { year: '2022 - الحاضر', title: 'أخصائي تكنولوجيا المعلومات', desc: 'مستشفى دوروك نيلوفر الخاص - إدارة البنية التحتية والأنظمة.' },
                 { year: '2018 - 2022', title: 'أخصائي تكنولوجيا المعلومات', desc: 'Motif Mensucat - إدارة الشبكات ودعم الأنظمة.' },
-                { year: '2018', title: 'أخصائي برمجيات', desc: 'Hamzagil Emprime - تطوير حلول برمجية داخلية.' },
+                { year: '2018 - 2018', title: 'أخصائي برمجيات', desc: 'Hamzagil Emprime - تطوير حلول برمجية داخلية.' },
                 { year: '2012 - 2018', title: 'أخصائي تكنولوجيا المعلومات', desc: 'Ente Tanıtım - دعم تكنولوجيا المعلومات.' },
             ]
         },
@@ -319,7 +307,7 @@ export const translations = {
             timeline: [
                 { year: '2022 - Heute', title: 'IT-Spezialist', desc: 'Özel Doruk Nilüfer Krankenhaus - Verwaltung von IT-Infrastruktur und Systemen.' },
                 { year: '2018 - 2022', title: 'IT-Spezialist', desc: 'Motif Mensucat - Netzwerkadministration und Systemunterstützung.' },
-                { year: '2018', title: 'Software-Spezialist', desc: 'Hamzagil Emprime - Entwicklung interner Softwarelösungen.' },
+                { year: '2018 - 2018', title: 'Software-Spezialist', desc: 'Hamzagil Emprime - Entwicklung interner Softwarelösungen.' },
                 { year: '2012 - 2018', title: 'IT-Spezialist', desc: 'Ente Tanıtım - IT-Infrastruktur und Support.' },
             ]
         },
@@ -404,7 +392,7 @@ export const translations = {
             timeline: [
                 { year: '2022 - Настоящее время', title: 'IT-специалист', desc: 'Больница Özel Doruk Nilüfer - Управление IT-инфраструктурой и системами.' },
                 { year: '2018 - 2022', title: 'IT-специалист', desc: 'Motif Mensucat - Сетевое администрирование и поддержка систем.' },
-                { year: '2018', title: 'Специалист по ПО', desc: 'Hamzagil Emprime - Разработка внутренних программных решений.' },
+                { year: '2018 - 2018', title: 'Специалист по ПО', desc: 'Hamzagil Emprime - Разработка внутренних программных решений.' },
                 { year: '2012 - 2018', title: 'IT-специалист', desc: 'Ente Tanıtım - IT-инфраструктура и поддержка.' },
             ]
         },
