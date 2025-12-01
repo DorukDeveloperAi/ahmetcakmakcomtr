@@ -59,6 +59,25 @@ Canlı Demo: [ahmetcakmak.com.tr](http://ahmetcakmak.com.tr)
 *   `src/data`: Çeviri metinleri ve sabit veriler.
 *   `public`: Statik dosyalar.
 
+## 📝 Son Güncellemeler (Changelog) - [01.12.2025]
+
+### 1. Hizmetler (Services) Bölümü Geliştirmeleri
+*   **Detaylı Hizmet Listesi:** "Tüm Hizmetleri Görüntüle" butonu eklendi. Bu butonla açılan modal penceresinde Danışmanlık, Geliştirme ve Altyapı hizmetleri kategorize edilerek listelendi.
+*   **Mobil Uyumluluk (Responsive):** Hizmet kartlarının mobil cihazlarda (özellikle iPhone SE gibi dar ekranlarda) düzgün görüntülenmesi için CSS düzenlemeleri yapıldı. Kart genişlikleri ve taşma sorunları giderildi.
+*   **Görsel Optimizasyonu:** Performansı artırmak için Unsplash üzerinden çekilen görsellerin çözünürlükleri optimize edildi (`w=600`).
+*   **Danışmanlık CTA Alanı:**
+    *   Metin iki satıra bölündü ("Profesyonel Bilişim ve Yazılım danışmanlığı ile...").
+    *   Görsel, daha modern ve teknolojik bir "abstract network" ikonu ile değiştirildi.
+    *   "Danışmanlık Al" butonu daha belirgin (beyaz arka plan, siyah yazı) hale getirildi.
+
+### 2. Hata Düzeltmeleri ve İyileştirmeler
+*   **İngilizce Çeviri Hatası:** İngilizce dil seçeneğinde sayfanın siyah ekranda kalmasına neden olan `translations.js` dosyasındaki yapısal hata (eksik `contact` objesi) giderildi.
+*   **Çeviri Güncellemeleri:** "View All Services" butonu için tüm dillerde (TR, EN, AR, DE, RU) çeviriler eklendi.
+
+### 3. Dağıtım (Deployment)
+*   Tüm değişiklikler derlendi (`npm run build`) ve `deploy.js` betiği kullanılarak canlı sunucuya (`ahmetcakmak.com.tr`) yüklendi.
+*   Kodlar GitHub deposuna push edildi.
+
 ## 👤 Geliştirici
 
 **Ahmet ÇAKMAK**
