@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
-import './Projects.css';
+import './Services.css';
 
-const Projects = () => {
+const Services = () => {
     const { t } = useLanguage();
     const scrollContainer = React.useRef(null);
     const [isHovered, setIsHovered] = React.useState(false);
@@ -150,4 +150,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Services;
