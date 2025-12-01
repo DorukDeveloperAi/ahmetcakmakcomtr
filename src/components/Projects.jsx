@@ -82,7 +82,7 @@ const Projects = () => {
     };
 
     return (
-        <section id="projects" className="section projects-section">
+        <section id="services" className="section projects-section">
             <div className="container">
                 <motion.h2
                     className="section-title"
