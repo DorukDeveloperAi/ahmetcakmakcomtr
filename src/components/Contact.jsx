@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter, FaWhatsapp, FaYoutube, FaInstagram } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import './Contact.css';
 
@@ -39,10 +39,11 @@ const Contact = () => {
                                 <FaWhatsapp /> +90 531 762 63 27
                             </a>
                             <div className="social-icons">
+                                <a href="https://www.youtube.com/@dolunay86" target="_blank" rel="noreferrer"><FaYoutube /></a>
+                                <a href="https://www.instagram.com/dolunayim86/" target="_blank" rel="noreferrer"><FaInstagram /></a>
                                 <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a>
                                 <a href="https://github.com" target="_blank" rel="noreferrer"><FaGithub /></a>
                                 <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
-                                <a href="https://www.youtube.com/@dolunay86" target="_blank" rel="noreferrer"><FaYoutube /></a>
                             </div>
                         </div>
                     </motion.div>
