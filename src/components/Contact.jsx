@@ -32,8 +32,8 @@ const Contact = () => {
                         </p>
 
                         <div className="contact-links">
-                            <a href="mailto:info@ahmetcakmak.com.tr" className="contact-link">
-                                <FaEnvelope /> info@ahmetcakmak.com.tr
+                            <a href="mailto:kamkactemha@hotmail.com" className="contact-link">
+                                <FaEnvelope /> kamkactemha@hotmail.com
                             </a>
                             <div className="social-icons">
                                 <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a>
@@ -48,7 +48,14 @@ const Contact = () => {
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        onSubmit={(e) => e.preventDefault()}
+                        onSubmit={(e) => {
+                            e.preventDefault();
+                            const formData = new FormData(e.target);
+                            const name = formData.get('name');
+                            const email = formData.get('email');
+                            const message = formData.get('message');
+                            window.location.href = `mailto:kamkactemha@hotmail.com?subject=Contact from Portfolio - ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+                        }}
                     >
                         <div className="form-group">
                             <label htmlFor="name">{t.contact.form.name}</label>
