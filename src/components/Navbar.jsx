@@ -43,6 +43,8 @@ const Navbar = ({ theme, toggleTheme }) => {
     { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
     { code: 'en', label: 'English', flag: '🇺🇸' },
     { code: 'ar', label: 'العربية', flag: '🇸🇦' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
   ];
 
   const handleLangSelect = (langCode) => {

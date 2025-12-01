@@ -199,5 +199,139 @@ export const translations = {
             rights: 'جميع الحقوق محفوظة.',
             madeWith: 'صنع بـ',
         }
+    },
+    de: {
+        nav: {
+            home: 'Startseite',
+            projects: 'Projekte',
+            skills: 'Fähigkeiten',
+            about: 'Über mich',
+            contact: 'Kontakt',
+        },
+        hero: {
+            greeting: "Hallo, ich bin",
+            role: 'IT-Spezialist & Full Stack Entwickler',
+            bio: 'Über 10 Jahre Erfahrung in IT-Infrastruktur, Systemadministration und Webentwicklung. Leidenschaftlich für Industrie 4.0, IoT und die Erstellung effizienter digitaler Lösungen.',
+            explore: 'Projekte erkunden',
+            downloadCv: 'Lebenslauf herunterladen',
+        },
+        projects: {
+            title: 'Ausgewählte Projekte',
+            viewAll: 'Alle Projekte anzeigen',
+            items: [
+                {
+                    id: 1,
+                    title: 'Erstellte Websites',
+                    description: 'Moderne, responsive und SEO-freundliche Unternehmenswebsite-Lösungen.',
+                },
+                {
+                    id: 2,
+                    title: 'CRM-Software',
+                    description: 'Kundenspezifische Software für Kundenbeziehungs- und Geschäftsprozessmanagement.',
+                },
+                {
+                    id: 3,
+                    title: 'Soziale Medien',
+                    description: 'Social-Media-Management-Tools und Analyse-Dashboards.',
+                }
+            ]
+        },
+        skills: {
+            title: 'Technische Fähigkeiten',
+        },
+        about: {
+            title: 'Über mich',
+            p1: 'Ich habe an der Universität Kocaeli, Abteilung für Computerpädagogik, meinen Abschluss gemacht. Ich arbeite seit über 10 Jahren professionell im Bereich IT und Software. Während meiner Karriere habe ich umfangreiche Erfahrungen sowohl im System-/Netzwerkmanagement als auch in der Full-Stack-Webentwicklung gesammelt.',
+            p2: 'Ich verfüge über Fachwissen in Unternehmensnetzwerkstrukturen, Servermanagement (Windows Server, Active Directory), Virtualisierung und Datensicherheit. Gleichzeitig entwickle ich webbasierte ERP/CRM-Lösungen unter Verwendung von PHP, Javascript und MySQL/MSSQL-Technologien.',
+            p3: "Meine Leidenschaft für Künstliche Intelligenz und Maschinelles Lernen treibt mich ständig dazu an, Werkzeuge der nächsten Generation zu erforschen. Ich arbeite aktiv mit fortschrittlichen KI-Systemen wie 'Antigravity' und autonomen Codierungsassistenten zusammen und erlebe aus erster Hand, wie diese Technologien Softwareentwicklungsprozesse transformieren. Indem ich Zukunftstechnologien heute in meine Projekte integriere, schaffe ich intelligentere und effizientere Lösungen.",
+            timeline: [
+                { year: '2022 - Heute', title: 'IT-Spezialist', desc: 'Özel Doruk Nilüfer Krankenhaus - Verwaltung von IT-Infrastruktur und Systemen.' },
+                { year: '2018 - 2022', title: 'IT-Spezialist', desc: 'Motif Mensucat - Netzwerkadministration und Systemunterstützung.' },
+                { year: '2018', title: 'Software-Spezialist', desc: 'Hamzagil Emprime - Entwicklung interner Softwarelösungen.' },
+                { year: '2012 - 2018', title: 'IT-Spezialist', desc: 'Ente Tanıtım - IT-Infrastruktur und Support.' },
+            ]
+        },
+        contact: {
+            title: 'Kontakt aufnehmen',
+            subtitle: "Lass uns reden",
+            desc: "Ich stehe derzeit für freiberufliche Arbeiten zur Verfügung und bin offen für neue Möglichkeiten. Ob Sie eine Frage haben oder einfach nur Hallo sagen möchten, ich werde mein Bestes geben, um mich bei Ihnen zu melden!",
+            form: {
+                name: 'Name',
+                email: 'E-Mail',
+                message: 'Nachricht',
+                send: 'Nachricht senden',
+            }
+        },
+        footer: {
+            rights: 'Alle Rechte vorbehalten.',
+            madeWith: 'Gemacht mit',
+        }
+    },
+    ru: {
+        nav: {
+            home: 'Главная',
+            projects: 'Проекты',
+            skills: 'Навыки',
+            about: 'Обо мне',
+            contact: 'Контакты',
+        },
+        hero: {
+            greeting: "Привет, я",
+            role: 'IT-специалист и Full Stack разработчик',
+            bio: 'Более 10 лет опыта в IT-инфраструктуре, системном администрировании и веб-разработке. Увлечен Индустрией 4.0, IoT и созданием эффективных цифровых решений.',
+            explore: 'Посмотреть проекты',
+            downloadCv: 'Скачать резюме',
+        },
+        projects: {
+            title: 'Избранные проекты',
+            viewAll: 'Посмотреть все проекты',
+            items: [
+                {
+                    id: 1,
+                    title: 'Созданные веб-сайты',
+                    description: 'Современные, адаптивные и SEO-дружественные решения для корпоративных веб-сайтов.',
+                },
+                {
+                    id: 2,
+                    title: 'CRM-программное обеспечение',
+                    description: 'Пользовательское программное обеспечение для управления взаимоотношениями с клиентами и бизнес-процессами.',
+                },
+                {
+                    id: 3,
+                    title: 'Социальные сети',
+                    description: 'Инструменты управления социальными сетями и аналитические панели.',
+                }
+            ]
+        },
+        skills: {
+            title: 'Технические навыки',
+        },
+        about: {
+            title: 'Обо мне',
+            p1: 'Я окончил Университет Коджаэли, факультет компьютерного образования. Я профессионально работаю в сфере IT и программного обеспечения более 10 лет. За свою карьеру я приобрел обширный опыт как в управлении системами/сетями, так и в веб-разработке полного цикла.',
+            p2: 'У меня есть опыт в структурах корпоративных сетей, управлении серверами (Windows Server, Active Directory), виртуализации и безопасности данных. Одновременно я разрабатываю веб-решения ERP/CRM с использованием технологий PHP, Javascript и MySQL/MSSQL.',
+            p3: "Моя страсть к искусственному интеллекту и машинному обучению постоянно побуждает меня изучать инструменты следующего поколения. Я активно работаю с передовыми системами ИИ, такими как 'Antigravity', и автономными помощниками по кодированию, на собственном опыте убеждаясь, как эти технологии трансформируют процессы разработки программного обеспечения. Интегрируя технологии будущего в свои проекты сегодня, я создаю более умные и эффективные решения.",
+            timeline: [
+                { year: '2022 - Настоящее время', title: 'IT-специалист', desc: 'Больница Özel Doruk Nilüfer - Управление IT-инфраструктурой и системами.' },
+                { year: '2018 - 2022', title: 'IT-специалист', desc: 'Motif Mensucat - Сетевое администрирование и поддержка систем.' },
+                { year: '2018', title: 'Специалист по ПО', desc: 'Hamzagil Emprime - Разработка внутренних программных решений.' },
+                { year: '2012 - 2018', title: 'IT-специалист', desc: 'Ente Tanıtım - IT-инфраструктура и поддержка.' },
+            ]
+        },
+        contact: {
+            title: 'Связаться',
+            subtitle: "Давайте поговорим",
+            desc: "В настоящее время я доступен для фриланса и открыт для новых возможностей. Если у вас есть вопрос или вы просто хотите поздороваться, я постараюсь ответить вам как можно скорее!",
+            form: {
+                name: 'Имя',
+                email: 'Электронная почта',
+                message: 'Сообщение',
+                send: 'Отправить сообщение',
+            }
+        },
+        footer: {
+            rights: 'Все права защищены.',
+            madeWith: 'Сделано с',
+        }
     }
 };
