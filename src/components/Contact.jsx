@@ -51,13 +51,46 @@ const Contact = () => {
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        onSubmit={(e) => {
+                        onSubmit={async (e) => {
                             e.preventDefault();
                             const formData = new FormData(e.target);
-                            const name = formData.get('name');
-                            const email = formData.get('email');
-                            const message = formData.get('message');
-                            window.location.href = `mailto:kamkactemha@hotmail.com?subject=Contact from Portfolio - ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+                            const data = {
+                                name: formData.get('name'),
+                                email: formData.get('email'),
+                                message: formData.get('message')
+                            };
+
+                            const submitBtn = e.target.querySelector('button[type="submit"]');
+                            const originalText = submitBtn.innerText;
+                            submitBtn.innerText = 'Sending...';
+                            submitBtn.disabled = true;
+
+                            try {
+                                const response = await fetch('/send-mail.php', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                    },
+                                    body: JSON.stringify(data)
+                                });
+
+                                const result = await response.json();
+
+                                if (result.status === 'success') {
+                                    alert('Message sent successfully!');
+                                    e.target.reset();
+                                } else {
+                                    throw new Error(result.message || 'Failed to send');
+                                }
+                            } catch (error) {
+                                console.error('Email error:', error);
+                                alert('Could not send email directly. Redirecting to WhatsApp...');
+                                const waMessage = `Name: ${data.name}%0AEmail: ${data.email}%0AMessage: ${data.message}`;
+                                window.open(`https://wa.me/905317626327?text=${waMessage}`, '_blank');
+                            } finally {
+                                submitBtn.innerText = originalText;
+                                submitBtn.disabled = false;
+                            }
                         }}
                     >
                         <div className="form-group">
