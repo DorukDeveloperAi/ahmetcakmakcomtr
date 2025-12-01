@@ -2,7 +2,7 @@ export const translations = {
     en: {
         nav: {
             home: 'Home',
-            projects: 'Projects',
+            projects: 'Services',
             skills: 'Skills',
             about: 'About',
             contact: 'Contact',
@@ -11,12 +11,12 @@ export const translations = {
             greeting: "Hello, I'm",
             role: 'IT Specialist & Full Stack Developer',
             bio: 'Over 10 years of experience in IT infrastructure, system administration, and web development. Passionate about Industry 4.0, IoT, and creating efficient digital solutions.',
-            explore: 'Explore Projects',
+            explore: 'Explore Services',
             downloadCv: 'Download CV',
         },
         projects: {
             title: 'Services Provided',
-            viewAll: 'View All Projects',
+            viewAll: 'View All Services',
             items: [
                 {
                     id: 1,
@@ -74,7 +74,7 @@ export const translations = {
     tr: {
         nav: {
             home: 'Ana Sayfa',
-            projects: 'Projeler',
+            projects: 'Hizmetler',
             skills: 'Yetenekler',
             about: 'Hakkımda',
             contact: 'İletişim',
@@ -83,12 +83,12 @@ export const translations = {
             greeting: "Merhaba, Ben",
             role: 'Bilgi İşlem Uzmanı & Full Stack Geliştirici',
             bio: 'BT altyapısı, sistem yönetimi ve web geliştirme alanlarında 10 yılı aşkın deneyim. Endüstri 4.0, IoT ve verimli dijital çözümler üretme konusunda tutkulu.',
-            explore: 'Projeleri Keşfet',
+            explore: 'Hizmetleri Keşfet',
             downloadCv: 'CV İndir',
         },
         projects: {
             title: 'Vermiş Olduğum Hizmetler',
-            viewAll: 'Tüm Projeleri Gör',
+            viewAll: 'Tüm Hizmetleri Gör',
             items: [
                 {
                     id: 1,
@@ -146,7 +146,7 @@ export const translations = {
     ar: {
         nav: {
             home: 'الرئيسية',
-            projects: 'المشاريع',
+            projects: 'الخدمات',
             skills: 'المهارات',
             about: 'عني',
             contact: 'اتصل بي',
@@ -155,12 +155,12 @@ export const translations = {
             greeting: "مرحباً، أنا",
             role: 'أخصائي تكنولوجيا المعلومات ومطور شامل',
             bio: 'أكثر من 10 سنوات من الخبرة في البنية التحتية لتكنولوجيا المعلومات، إدارة الأنظمة، وتطوير الويب. شغوف بالصناعة 4.0، إنترنت الأشياء، وإنشاء حلول رقمية فعالة.',
-            explore: 'استكشف المشاريع',
+            explore: 'استكشف الخدمات',
             downloadCv: 'تحميل السيرة الذاتية',
         },
         projects: {
             title: 'الخدمات المقدمة',
-            viewAll: 'عرض جميع المشاريع',
+            viewAll: 'عرض جميع الخدمات',
             items: [
                 {
                     id: 1,
@@ -218,7 +218,7 @@ export const translations = {
     de: {
         nav: {
             home: 'Startseite',
-            projects: 'Projekte',
+            projects: 'Dienstleistungen',
             skills: 'Fähigkeiten',
             about: 'Über mich',
             contact: 'Kontakt',
@@ -227,12 +227,12 @@ export const translations = {
             greeting: "Hallo, ich bin",
             role: 'IT-Spezialist & Full Stack Entwickler',
             bio: 'Über 10 Jahre Erfahrung in IT-Infrastruktur, Systemadministration und Webentwicklung. Leidenschaftlich für Industrie 4.0, IoT und die Erstellung effizienter digitaler Lösungen.',
-            explore: 'Projekte erkunden',
+            explore: 'Dienstleistungen erkunden',
             downloadCv: 'Lebenslauf herunterladen',
         },
         projects: {
             title: 'Dienstleistungen',
-            viewAll: 'Alle Projekte anzeigen',
+            viewAll: 'Alle Dienstleistungen anzeigen',
             items: [
                 {
                     id: 1,
@@ -290,7 +290,7 @@ export const translations = {
     ru: {
         nav: {
             home: 'Главная',
-            projects: 'Проекты',
+            projects: 'Услуги',
             skills: 'Навыки',
             about: 'Обо мне',
             contact: 'Контакты',
@@ -299,12 +299,12 @@ export const translations = {
             greeting: "Привет, я",
             role: 'IT-специалист и Full Stack разработчик',
             bio: 'Более 10 лет опыта в IT-инфраструктуре, системном администрировании и веб-разработке. Увлечен Индустрией 4.0, IoT и созданием эффективных цифровых решений.',
-            explore: 'Посмотреть проекты',
+            explore: 'Посмотреть услуги',
             downloadCv: 'Скачать резюме',
         },
         projects: {
             title: 'Предоставляемые услуги',
-            viewAll: 'Посмотреть все проекты',
+            viewAll: 'Посмотреть все услуги',
             items: [
                 {
                     id: 1,
