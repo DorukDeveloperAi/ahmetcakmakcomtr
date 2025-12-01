@@ -20,17 +20,17 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: 'Websites Created',
+                    title: 'Website Consultancy',
                     description: 'Modern, responsive, and SEO-friendly corporate website solutions.',
                 },
                 {
                     id: 2,
-                    title: 'CRM Software',
+                    title: 'ERP & CRM Consultancy',
                     description: 'Custom software for customer relationship and business process management.',
                 },
                 {
                     id: 3,
-                    title: 'Social Media',
+                    title: 'Social Media Consultancy',
                     description: 'Social media management tools and analytics dashboards.',
                 },
                 {
@@ -92,17 +92,17 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: 'Yapılan Web Siteleri',
+                    title: 'Web Site Danışmanlığı',
                     description: 'Modern, responsive ve SEO uyumlu kurumsal web sitesi çözümleri.',
                 },
                 {
                     id: 2,
-                    title: 'CRM Yazılımları',
+                    title: 'ERP & CRM Danışmanlığı',
                     description: 'Müşteri ilişkileri ve iş süreçleri yönetimi için özel yazılımlar.',
                 },
                 {
                     id: 3,
-                    title: 'Sosyal Medya',
+                    title: 'Sosyal Medya Danışmanlığı',
                     description: 'Sosyal medya yönetimi ve analiz araçları.',
                 },
                 {
@@ -164,17 +164,17 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: 'تطوير المواقع',
+                    title: 'استشارات المواقع الإلكترونية',
                     description: 'حلول مواقع ويب مؤسسية حديثة ومتجاوبة ومتوافقة مع محركات البحث.',
                 },
                 {
                     id: 2,
-                    title: 'برامج CRM',
+                    title: 'استشارات ERP & CRM',
                     description: 'برامج مخصصة لإدارة علاقات العملاء والعمليات التجارية.',
                 },
                 {
                     id: 3,
-                    title: 'وسائل التواصل الاجتماعي',
+                    title: 'استشارات وسائل التواصل الاجتماعي',
                     description: 'أدوات إدارة وتحليل وسائل التواصل الاجتماعي.',
                 },
                 {
@@ -236,17 +236,17 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: 'Erstellte Websites',
+                    title: 'Webseiten-Beratung',
                     description: 'Moderne, responsive und SEO-freundliche Unternehmenswebsite-Lösungen.',
                 },
                 {
                     id: 2,
-                    title: 'CRM-Software',
+                    title: 'ERP & CRM-Beratung',
                     description: 'Kundenspezifische Software für Kundenbeziehungs- und Geschäftsprozessmanagement.',
                 },
                 {
                     id: 3,
-                    title: 'Soziale Medien',
+                    title: 'Social Media Beratung',
                     description: 'Social-Media-Management-Tools und Analyse-Dashboards.',
                 },
                 {
@@ -308,17 +308,17 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: 'Созданные веб-сайты',
+                    title: 'Консультации по веб-сайтам',
                     description: 'Современные, адаптивные и SEO-дружественные решения для корпоративных веб-сайтов.',
                 },
                 {
                     id: 2,
-                    title: 'CRM-программное обеспечение',
+                    title: 'ERP и CRM консалтинг',
                     description: 'Пользовательское программное обеспечение для управления взаимоотношениями с клиентами и бизнес-процессами.',
                 },
                 {
                     id: 3,
-                    title: 'Социальные сети',
+                    title: 'Консультации по социальным сетям',
                     description: 'Инструменты управления социальными сетями и аналитические панели.',
                 },
                 {
