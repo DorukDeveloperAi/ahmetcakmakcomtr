@@ -7,31 +7,25 @@ import './Projects.css';
 const Projects = () => {
     const { t } = useLanguage();
 
-    // Map static data to translation structure if needed, or just use t.projects.items directly
-    // Since we put the data in translations.js, we can iterate over t.projects.items
-
-    // We need to add the static image/tech data back to the items since it's not in translations
-    // Or better, keep the structure in translations.js simple and merge it here.
-
     const staticProjectData = [
         {
             id: 1,
-            tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-            image: 'https://via.placeholder.com/600x400/111/fff?text=E-Commerce',
+            tech: ['HTML5', 'CSS3', 'React', 'SEO'],
+            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop',
             github: 'https://github.com',
             demo: 'https://demo.com'
         },
         {
             id: 2,
-            tech: ['Python', 'FastAPI', 'React', 'OpenAI'],
-            image: 'https://via.placeholder.com/600x400/111/fff?text=AI+Task+Manager',
+            tech: ['Python', 'Django', 'React', 'PostgreSQL'],
+            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop',
             github: 'https://github.com',
             demo: 'https://demo.com'
         },
         {
             id: 3,
-            tech: ['Vue.js', 'Firebase', 'D3.js'],
-            image: 'https://via.placeholder.com/600x400/111/fff?text=Dashboard',
+            tech: ['Node.js', 'Analytics', 'API', 'Dashboard'],
+            image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2574&auto=format&fit=crop',
             github: 'https://github.com',
             demo: 'https://demo.com'
         }

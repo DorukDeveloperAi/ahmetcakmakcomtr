@@ -20,18 +20,18 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: 'E-Commerce Platform',
-                    description: 'A full-featured online store with cart, checkout, and payment integration.',
+                    title: 'Websites Created',
+                    description: 'Modern, responsive, and SEO-friendly corporate website solutions.',
                 },
                 {
                     id: 2,
-                    title: 'AI Task Manager',
-                    description: 'Smart task management app that uses AI to prioritize and categorize tasks.',
+                    title: 'CRM Software',
+                    description: 'Custom software for customer relationship and business process management.',
                 },
                 {
                     id: 3,
-                    title: 'Social Media Dashboard',
-                    description: 'Real-time analytics dashboard for tracking social media performance.',
+                    title: 'Social Media',
+                    description: 'Social media management tools and analytics dashboards.',
                 }
             ]
         },
@@ -86,18 +86,18 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: 'E-Ticaret Platformu',
-                    description: 'Sepet, ödeme ve sipariş takibi içeren tam kapsamlı bir online mağaza.',
+                    title: 'Yapılan Web Siteleri',
+                    description: 'Modern, responsive ve SEO uyumlu kurumsal web sitesi çözümleri.',
                 },
                 {
                     id: 2,
-                    title: 'AI Görev Yöneticisi',
-                    description: 'Görevleri önceliklendirmek ve kategorize etmek için yapay zeka kullanan akıllı uygulama.',
+                    title: 'CRM Yazılımları',
+                    description: 'Müşteri ilişkileri ve iş süreçleri yönetimi için özel yazılımlar.',
                 },
                 {
                     id: 3,
-                    title: 'Sosyal Medya Paneli',
-                    description: 'Sosyal medya performansını takip etmek için gerçek zamanlı analiz paneli.',
+                    title: 'Sosyal Medya',
+                    description: 'Sosyal medya yönetimi ve analiz araçları.',
                 }
             ]
         },
@@ -152,18 +152,18 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: 'منصة التجارة الإلكترونية',
-                    description: 'متجر إلكتروني متكامل الميزات مع سلة تسوق، دفع، وتكامل المدفوعات.',
+                    title: 'تطوير المواقع',
+                    description: 'حلول مواقع ويب مؤسسية حديثة ومتجاوبة ومتوافقة مع محركات البحث.',
                 },
                 {
                     id: 2,
-                    title: 'مدير المهام بالذكاء الاصطناعي',
-                    description: 'تطبيق ذكي لإدارة المهام يستخدم الذكاء الاصطناعي لتحديد الأولويات وتصنيف المهام.',
+                    title: 'برامج CRM',
+                    description: 'برامج مخصصة لإدارة علاقات العملاء والعمليات التجارية.',
                 },
                 {
                     id: 3,
-                    title: 'لوحة تحكم وسائل التواصل',
-                    description: 'لوحة تحكم تحليلية في الوقت الفعلي لتتبع أداء وسائل التواصل الاجتماعي.',
+                    title: 'وسائل التواصل الاجتماعي',
+                    description: 'أدوات إدارة وتحليل وسائل التواصل الاجتماعي.',
                 }
             ]
         },
