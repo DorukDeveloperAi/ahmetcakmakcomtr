@@ -52,44 +52,40 @@ export const translations = {
                     description: 'Integrating advanced AI models and LLMs into business workflows for enhanced automation and efficiency.',
                 }
             ],
-            allServicesBtn: 'View All Services',
+            consultancyCTA: {
+                text: "Take your business to the next level with professional IT and Software consultancy.",
+                btn: "Get Consultancy"
+            },
             allServicesList: [
                 {
-                    category: 'Web & Software Development',
+                    category: 'Consultancy Services',
+                    items: [
+                        'Web Software Consultancy',
+                        'SEO Consultancy',
+                        'Social Media Consultancy',
+                        'E-commerce Consultancy',
+                        'Cybersecurity Consultancy',
+                        'Digital Transformation Consultancy',
+                        'Cloud Systems Consultancy'
+                    ]
+                },
+                {
+                    category: 'Development Services',
                     items: [
                         'Corporate Website Development',
-                        'E-commerce Solutions',
                         'Custom Web Application Development',
+                        'Mobile App Development (iOS/Android)',
                         'API Integration & Development',
-                        'Mobile App Development (iOS/Android)'
+                        'CRM & ERP Software Development'
                     ]
                 },
                 {
-                    category: 'IT Infrastructure & Network',
+                    category: 'IT & Infrastructure',
                     items: [
-                        'Server Installation & Management (Windows/Linux)',
-                        'Network Security & Firewall Solutions',
-                        'Virtualization Solutions (VMware/Hyper-V)',
-                        'Backup & Disaster Recovery',
-                        'Active Directory Management'
-                    ]
-                },
-                {
-                    category: 'Consultancy & Strategy',
-                    items: [
-                        'Digital Transformation Consultancy',
-                        'IT Process Management',
-                        'ERP/CRM Selection & Implementation',
-                        'Technology Stack Advisory'
-                    ]
-                },
-                {
-                    category: 'AI & Automation',
-                    items: [
-                        'AI Model Integration',
-                        'Workflow Automation',
-                        'Chatbot Development',
-                        'Data Analysis & Reporting'
+                        'Server Installation & Management',
+                        'Network Security Solutions',
+                        'Backup & Recovery Systems',
+                        'Virtualization Solutions'
                     ]
                 }
             ]
@@ -166,44 +162,40 @@ export const translations = {
                     description: 'İş süreçlerini otomatize etmek ve verimliliği artırmak için gelişmiş yapay zeka modellerinin (LLM) entegrasyonu.',
                 }
             ],
-            allServicesBtn: 'Tüm Hizmetleri Görüntüle',
+            consultancyCTA: {
+                text: "Profesyonel Bilişim ve Yazılım danışmanlığı ile işinizi bir adım öteye taşıyın.",
+                btn: "Danışmanlık Al"
+            },
             allServicesList: [
                 {
-                    category: 'Web ve Yazılım Geliştirme',
+                    category: 'Danışmanlık Hizmetleri',
+                    items: [
+                        'Web Yazılım Danışmanlığı',
+                        'SEO Danışmanlığı',
+                        'Sosyal Medya Danışmanlığı',
+                        'E-ticaret Danışmanlığı',
+                        'Siber Güvenlik Danışmanlığı',
+                        'Dijital Dönüşüm Danışmanlığı',
+                        'Bulut Sistemleri Danışmanlığı'
+                    ]
+                },
+                {
+                    category: 'Geliştirme Hizmetleri',
                     items: [
                         'Kurumsal Web Sitesi Geliştirme',
-                        'E-ticaret Çözümleri',
                         'Özel Web Uygulama Geliştirme',
+                        'Mobil Uygulama Geliştirme (iOS/Android)',
                         'API Entegrasyonu ve Geliştirme',
-                        'Mobil Uygulama Geliştirme (iOS/Android)'
+                        'CRM & ERP Yazılım Geliştirme'
                     ]
                 },
                 {
-                    category: 'BT Altyapı ve Ağ',
+                    category: 'BT & Altyapı',
                     items: [
-                        'Sunucu Kurulumu ve Yönetimi (Windows/Linux)',
-                        'Ağ Güvenliği ve Firewall Çözümleri',
-                        'Sanallaştırma Çözümleri (VMware/Hyper-V)',
-                        'Yedekleme ve Felaket Kurtarma',
-                        'Active Directory Yönetimi'
-                    ]
-                },
-                {
-                    category: 'Danışmanlık ve Strateji',
-                    items: [
-                        'Dijital Dönüşüm Danışmanlığı',
-                        'BT Süreç Yönetimi',
-                        'ERP/CRM Seçimi ve Uygulama',
-                        'Teknoloji Yığını Danışmanlığı'
-                    ]
-                },
-                {
-                    category: 'Yapay Zeka ve Otomasyon',
-                    items: [
-                        'Yapay Zeka Model Entegrasyonu',
-                        'İş Akışı Otomasyonu',
-                        'Chatbot Geliştirme',
-                        'Veri Analizi ve Raporlama'
+                        'Sunucu Kurulumu ve Yönetimi',
+                        'Ağ Güvenlik Çözümleri',
+                        'Yedekleme ve Kurtarma Sistemleri',
+                        'Sanallaştırma Çözümleri'
                     ]
                 }
             ]
@@ -292,44 +284,40 @@ export const translations = {
                     description: 'دمج نماذج الذكاء الاصطناعي المتقدمة في سير العمل التجاري لتعزيز الأتمتة والكفاءة.',
                 }
             ],
-            allServicesBtn: 'عرض جميع الخدمات',
+            consultancyCTA: {
+                text: "ارتقِ بعملك إلى المستوى التالي من خلال استشارات تكنولوجيا المعلومات والبرمجيات الاحترافية.",
+                btn: "احصل على استشارة"
+            },
             allServicesList: [
                 {
-                    category: 'تطوير الويب والبرمجيات',
+                    category: 'خدمات الاستشارات',
+                    items: [
+                        'استشارات برمجيات الويب',
+                        'استشارات تحسين محركات البحث (SEO)',
+                        'استشارات وسائل التواصل الاجتماعي',
+                        'استشارات التجارة الإلكترونية',
+                        'استشارات الأمن السيبراني',
+                        'استشارات التحول الرقمي',
+                        'استشارات الأنظمة السحابية'
+                    ]
+                },
+                {
+                    category: 'خدمات التطوير',
                     items: [
                         'تطوير مواقع الويب للشركات',
-                        'حلول التجارة الإلكترونية',
                         'تطوير تطبيقات الويب المخصصة',
+                        'تطوير تطبيقات الهاتف المحمول (iOS/Android)',
                         'تكامل وتطوير واجهة برمجة التطبيقات (API)',
-                        'تطوير تطبيقات الهاتف المحمول (iOS/Android)'
+                        'تطوير برامج CRM & ERP'
                     ]
                 },
                 {
-                    category: 'البنية التحتية لتكنولوجيا المعلومات والشبكات',
+                    category: 'تكنولوجيا المعلومات والبنية التحتية',
                     items: [
-                        'تثبيت وإدارة الخوادم (Windows/Linux)',
-                        'أمن الشبكات وحلول الجدار الناري',
-                        'حلول المحاكاة الافتراضية (VMware/Hyper-V)',
-                        'النسخ الاحتياطي والتعافي من الكوارث',
-                        'إدارة Active Directory'
-                    ]
-                },
-                {
-                    category: 'الاستشارات والاستراتيجية',
-                    items: [
-                        'استشارات التحول الرقمي',
-                        'إدارة عمليات تكنولوجيا المعلومات',
-                        'اختيار وتنفيذ ERP/CRM',
-                        'استشارات التكنولوجيا'
-                    ]
-                },
-                {
-                    category: 'الذكاء الاصطناعي والأتمتة',
-                    items: [
-                        'تكامل نماذج الذكاء الاصطناعي',
-                        'أتمتة سير العمل',
-                        'تطوير روبوتات الدردشة',
-                        'تحليل البيانات وإعداد التقارير'
+                        'تثبيت وإدارة الخوادم',
+                        'حلول أمن الشبكات',
+                        'أنظمة النسخ الاحتياطي والاسترداد',
+                        'حلول المحاكاة الافتراضية'
                     ]
                 }
             ]
@@ -418,44 +406,40 @@ export const translations = {
                     description: 'Integration fortschrittlicher KI-Modelle in Geschäftsprozesse zur Steigerung von Automatisierung und Effizienz.',
                 }
             ],
-            allServicesBtn: 'Alle Dienstleistungen anzeigen',
+            consultancyCTA: {
+                text: "Bringen Sie Ihr Unternehmen mit professioneller IT- und Softwareberatung auf die nächste Stufe.",
+                btn: "Beratung erhalten"
+            },
             allServicesList: [
                 {
-                    category: 'Web- & Softwareentwicklung',
+                    category: 'Beratungsdienste',
+                    items: [
+                        'Web-Software-Beratung',
+                        'SEO-Beratung',
+                        'Social-Media-Beratung',
+                        'E-Commerce-Beratung',
+                        'Cybersicherheitsberatung',
+                        'Beratung zur digitalen Transformation',
+                        'Cloud-System-Beratung'
+                    ]
+                },
+                {
+                    category: 'Entwicklungsdienste',
                     items: [
                         'Entwicklung von Unternehmenswebseiten',
-                        'E-Commerce-Lösungen',
                         'Entwicklung kundenspezifischer Webanwendungen',
+                        'Mobile App-Entwicklung (iOS/Android)',
                         'API-Integration & Entwicklung',
-                        'Mobile App-Entwicklung (iOS/Android)'
+                        'CRM & ERP Softwareentwicklung'
                     ]
                 },
                 {
-                    category: 'IT-Infrastruktur & Netzwerk',
+                    category: 'IT & Infrastruktur',
                     items: [
-                        'Serverinstallation & -verwaltung (Windows/Linux)',
-                        'Netzwerksicherheit & Firewall-Lösungen',
-                        'Virtualisierungslösungen (VMware/Hyper-V)',
-                        'Backup & Disaster Recovery',
-                        'Active Directory-Verwaltung'
-                    ]
-                },
-                {
-                    category: 'Beratung & Strategie',
-                    items: [
-                        'Beratung zur digitalen Transformation',
-                        'IT-Prozessmanagement',
-                        'Auswahl & Implementierung von ERP/CRM',
-                        'Technologieberatung'
-                    ]
-                },
-                {
-                    category: 'KI & Automatisierung',
-                    items: [
-                        'Integration von KI-Modellen',
-                        'Workflow-Automatisierung',
-                        'Chatbot-Entwicklung',
-                        'Datenanalyse & Reporting'
+                        'Serverinstallation & -verwaltung',
+                        'Netzwerksicherheitslösungen',
+                        'Backup- & Wiederherstellungssysteme',
+                        'Virtualisierungslösungen'
                     ]
                 }
             ]
@@ -544,44 +528,40 @@ export const translations = {
                     description: 'Интеграция передовых моделей ИИ в бизнес-процессы для повышения автоматизации и эффективности.',
                 }
             ],
-            allServicesBtn: 'Посмотреть все услуги',
+            consultancyCTA: {
+                text: "Поднимите свой бизнес на новый уровень с помощью профессиональных консультаций в области IT и программного обеспечения.",
+                btn: "Получить консультацию"
+            },
             allServicesList: [
                 {
-                    category: 'Веб и разработка ПО',
+                    category: 'Консалтинговые услуги',
+                    items: [
+                        'Консультации по веб-программному обеспечению',
+                        'SEO-консалтинг',
+                        'Консультации по социальным сетям',
+                        'Консультации по электронной коммерции',
+                        'Консультации по кибербезопасности',
+                        'Консультации по цифровой трансформации',
+                        'Консультации по облачным системам'
+                    ]
+                },
+                {
+                    category: 'Услуги разработки',
                     items: [
                         'Разработка корпоративных веб-сайтов',
-                        'Решения для электронной коммерции',
                         'Разработка пользовательских веб-приложений',
+                        'Разработка мобильных приложений (iOS/Android)',
                         'Интеграция и разработка API',
-                        'Разработка мобильных приложений (iOS/Android)'
+                        'Разработка программного обеспечения CRM и ERP'
                     ]
                 },
                 {
-                    category: 'IT-инфраструктура и сети',
+                    category: 'IT и инфраструктура',
                     items: [
-                        'Установка и управление серверами (Windows/Linux)',
-                        'Сетевая безопасность и решения Firewall',
-                        'Решения виртуализации (VMware/Hyper-V)',
-                        'Резервное копирование и аварийное восстановление',
-                        'Управление Active Directory'
-                    ]
-                },
-                {
-                    category: 'Консалтинг и стратегия',
-                    items: [
-                        'Консалтинг по цифровой трансформации',
-                        'Управление IT-процессами',
-                        'Выбор и внедрение ERP/CRM',
-                        'Консультации по технологическому стеку'
-                    ]
-                },
-                {
-                    category: 'ИИ и автоматизация',
-                    items: [
-                        'Интеграция моделей ИИ',
-                        'Автоматизация рабочих процессов',
-                        'Разработка чат-ботов',
-                        'Анализ данных и отчетность'
+                        'Установка и управление серверами',
+                        'Решения сетевой безопасности',
+                        'Системы резервного копирования и восстановления',
+                        'Решения виртуализации'
                     ]
                 }
             ]

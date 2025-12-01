@@ -147,43 +147,35 @@ const Services = () => {
                     </button>
                 </div>
 
-                <div className="view-all-container">
-                    <a href="#contact" className="btn btn-outline">{t.projects.viewAll}</a>
+                <div className="all-services-section">
+                    <div className="services-categories">
+                        {t.projects.allServicesList && t.projects.allServicesList.map((category, index) => (
+                            <div key={index} className="service-category">
+                                <h4>{category.category}</h4>
+                                <ul>
+                                    {category.items.map((item, idx) => (
+                                        <li key={idx}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
-                <div className="all-services-section">
-                    <button
-                        className={`all-services-toggle ${showAllServices ? 'active' : ''}`}
-                        onClick={toggleAllServices}
-                    >
-                        {t.projects.allServicesBtn}
-                        <span className="toggle-icon">{showAllServices ? '−' : '+'}</span>
-                    </button>
-
-                    <AnimatePresence>
-                        {showAllServices && (
-                            <motion.div
-                                className="all-services-list"
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={{ height: 'auto', opacity: 1 }}
-                                exit={{ height: 0, opacity: 0 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <div className="services-categories">
-                                    {t.projects.allServicesList && t.projects.allServicesList.map((category, index) => (
-                                        <div key={index} className="service-category">
-                                            <h4>{category.category}</h4>
-                                            <ul>
-                                                {category.items.map((item, idx) => (
-                                                    <li key={idx}>{item}</li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    ))}
-                                </div>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
+                <div className="consultancy-cta">
+                    <div className="consultancy-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" alt="Consultancy" />
+                    </div>
+                    <div className="consultancy-content">
+                        <p className="consultancy-text">
+                            {t.projects.consultancyCTA.text}
+                        </p>
+                    </div>
+                    <div className="consultancy-action">
+                        <a href="#contact" className="consultancy-btn">
+                            {t.projects.consultancyCTA.btn}
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
