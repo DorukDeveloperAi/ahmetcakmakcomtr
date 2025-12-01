@@ -1,19 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import './Projects.css';
 
 const Projects = () => {
     const { t } = useLanguage();
-    const [width, setWidth] = React.useState(0);
-    const carousel = React.useRef();
-
-    React.useEffect(() => {
-        if (carousel.current) {
-            setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-        }
-    }, [t.projects.items]); // Recalculate when items change
+    const scrollContainer = React.useRef(null);
+    const [isHovered, setIsHovered] = React.useState(false);
 
     const staticProjectData = [
         {
@@ -58,6 +52,35 @@ const Projects = () => {
         ...staticProjectData[index]
     }));
 
+    // Auto-scroll functionality
+    React.useEffect(() => {
+        const scroll = () => {
+            if (scrollContainer.current && !isHovered) {
+                scrollContainer.current.scrollLeft += 1;
+
+                // Reset scroll for infinite loop effect
+                if (scrollContainer.current.scrollLeft >= (scrollContainer.current.scrollWidth - scrollContainer.current.clientWidth)) {
+                    scrollContainer.current.scrollLeft = 0;
+                }
+            }
+        };
+
+        const intervalId = setInterval(scroll, 20);
+        return () => clearInterval(intervalId);
+    }, [isHovered]);
+
+    const scrollLeft = () => {
+        if (scrollContainer.current) {
+            scrollContainer.current.scrollBy({ left: -350, behavior: 'smooth' });
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollContainer.current) {
+            scrollContainer.current.scrollBy({ left: 350, behavior: 'smooth' });
+        }
+    };
+
     return (
         <section id="projects" className="section projects-section">
             <div className="container">
@@ -70,9 +93,17 @@ const Projects = () => {
                     {t.projects.title}
                 </motion.h2>
 
-                <div className="projects-marquee-container">
-                    <div className="projects-marquee">
+                <div className="projects-carousel-wrapper"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}>
+
+                    <button className="nav-btn prev-btn" onClick={scrollLeft} aria-label="Previous">
+                        <FaChevronLeft />
+                    </button>
+
+                    <div className="projects-scroll-container" ref={scrollContainer}>
                         <div className="projects-track">
+                            {/* Duplicate projects for infinite scroll illusion */}
                             {[...projects, ...projects, ...projects].map((project, index) => (
                                 <div
                                     key={`${project.id}-${index}`}
@@ -105,10 +136,14 @@ const Projects = () => {
                             ))}
                         </div>
                     </div>
+
+                    <button className="nav-btn next-btn" onClick={scrollRight} aria-label="Next">
+                        <FaChevronRight />
+                    </button>
                 </div>
 
                 <div className="view-all-container">
-                    <a href="#" className="btn btn-outline">{t.projects.viewAll}</a>
+                    <a href="#contact" className="btn btn-outline">{t.projects.viewAll}</a>
                 </div>
             </div>
         </section>

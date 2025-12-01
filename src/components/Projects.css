@@ -2,46 +2,76 @@
     background-color: var(--bg-secondary);
 }
 
-/* Marquee Styles */
-.projects-marquee-container {
-    overflow: hidden;
-    margin-bottom: 3rem;
+/* Carousel Styles */
+.projects-carousel-wrapper {
     position: relative;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
-.projects-marquee {
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+.projects-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    width: 100%;
+    border-radius: 12px;
+}
+
+.projects-scroll-container::-webkit-scrollbar {
+    display: none;
 }
 
 .projects-track {
     display: flex;
     gap: 2rem;
-    animation: scroll-projects 40s linear infinite;
     width: max-content;
     padding: 1rem 0;
 }
 
-.projects-marquee:hover .projects-track {
-    animation-play-state: paused;
+.nav-btn {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    z-index: 10;
+    flex-shrink: 0;
 }
 
-@keyframes scroll-projects {
-    0% {
-        transform: translateX(0);
-    }
+.nav-btn:hover {
+    background: var(--accent-primary);
+    color: white;
+    transform: scale(1.1);
+}
 
-    100% {
-        transform: translateX(calc(-33.33% - 1rem));
-        /* Adjust based on duplication factor (3x) */
+.prev-btn {
+    margin-right: 1rem;
+}
+
+.next-btn {
+    margin-left: 1rem;
+}
+
+/* Hide buttons on mobile if needed, or keep them */
+@media (max-width: 768px) {
+    .nav-btn {
+        display: none;
     }
 }
 
 .project-card {
+    min-width: 320px;
     width: 350px;
     flex-shrink: 0;
     background: var(--card-bg);

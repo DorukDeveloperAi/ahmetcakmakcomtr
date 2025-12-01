@@ -16,7 +16,7 @@ export const translations = {
         },
         projects: {
             title: 'Services Provided',
-            viewAll: 'View All Services',
+            viewAll: 'Get Consultancy Service',
             items: [
                 {
                     id: 1,
@@ -93,7 +93,7 @@ export const translations = {
         },
         projects: {
             title: 'Vermiş Olduğum Hizmetler',
-            viewAll: 'Tüm Hizmetleri Gör',
+            viewAll: 'Danışmanlık Hizmeti Al',
             items: [
                 {
                     id: 1,
@@ -170,7 +170,7 @@ export const translations = {
         },
         projects: {
             title: 'الخدمات المقدمة',
-            viewAll: 'عرض جميع الخدمات',
+            viewAll: 'احصل على خدمة استشارية',
             items: [
                 {
                     id: 1,
@@ -247,7 +247,7 @@ export const translations = {
         },
         projects: {
             title: 'Dienstleistungen',
-            viewAll: 'Alle Dienstleistungen anzeigen',
+            viewAll: 'Beratungsservice erhalten',
             items: [
                 {
                     id: 1,
@@ -324,7 +324,7 @@ export const translations = {
         },
         projects: {
             title: 'Предоставляемые услуги',
-            viewAll: 'Посмотреть все услуги',
+            viewAll: 'Получить консультацию',
             items: [
                 {
                     id: 1,
