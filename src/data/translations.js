@@ -104,6 +104,9 @@ export const translations = {
                 { year: '2018 - 2018', title: 'Software Specialist', desc: 'Hamzagil Emprime - Developing in-house software solutions.' },
                 { year: '2012 - 2018', title: 'IT Specialist', desc: 'Ente Tanıtım - IT support and system management.' },
             ],
+        },
+        contact: {
+            title: 'Contact',
             subtitle: "Let's Talk",
             desc: "I'm currently available for freelance work and open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
             form: {
