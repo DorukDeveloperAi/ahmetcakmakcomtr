@@ -47,7 +47,7 @@ export const translations = {
                 { year: '2022 - Present', title: 'IT Specialist', desc: 'Özel Doruk Nilüfer Hospital - Managing IT infrastructure and systems.' },
                 { year: '2018 - 2022', title: 'IT Specialist', desc: 'Motif Mensucat - Network administration and system support.' },
                 { year: '2018', title: 'Software Specialist', desc: 'Hamzagil Emprime - Developing internal software solutions.' },
-                { year: '2014 - 2018', title: 'IT Specialist', desc: 'Wentual Consultancy - Providing IT consultancy and support.' },
+                { year: '2012 - 2018', title: 'IT Specialist', desc: 'Ente Tanıtım - IT infrastructure and support.' },
             ]
         },
         contact: {
@@ -114,7 +114,7 @@ export const translations = {
                 { year: '2022 - Halen', title: 'Bilgi İşlem Uzmanı', desc: 'Özel Doruk Nilüfer Hastanesi - BT altyapı ve sistem yönetimi.' },
                 { year: '2018 - 2022', title: 'Bilgi İşlem Uzmanı', desc: 'Motif Mensucat - Ağ yönetimi ve sistem desteği.' },
                 { year: '2018', title: 'Yazılım Uzmanı', desc: 'Hamzagil Emprime - Kurum içi yazılım çözümleri geliştirme.' },
-                { year: '2014 - 2018', title: 'Bilgi İşlem Uzmanı', desc: 'Wentual Danışmanlık - BT danışmanlığı ve desteği.' },
+                { year: '2012 - 2018', title: 'Bilgi İşlem Uzmanı', desc: 'Ente Tanıtım - BT desteği ve sistem yönetimi.' },
             ]
         },
         contact: {
@@ -181,7 +181,7 @@ export const translations = {
                 { year: '2022 - الحاضر', title: 'أخصائي تكنولوجيا المعلومات', desc: 'مستشفى دوروك نيلوفر الخاص - إدارة البنية التحتية والأنظمة.' },
                 { year: '2018 - 2022', title: 'أخصائي تكنولوجيا المعلومات', desc: 'Motif Mensucat - إدارة الشبكات ودعم الأنظمة.' },
                 { year: '2018', title: 'أخصائي برمجيات', desc: 'Hamzagil Emprime - تطوير حلول برمجية داخلية.' },
-                { year: '2014 - 2018', title: 'أخصائي تكنولوجيا المعلومات', desc: 'Wentual Consultancy - تقديم استشارات ودعم تكنولوجيا المعلومات.' },
+                { year: '2012 - 2018', title: 'أخصائي تكنولوجيا المعلومات', desc: 'Ente Tanıtım - دعم تكنولوجيا المعلومات.' },
             ]
         },
         contact: {
