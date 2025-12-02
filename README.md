@@ -37,7 +37,39 @@ React, Vite ve Framer Motion kullanılarak oluşturulmuş, çok dilli (Türkçe,
 
 ## 🛠️ Kurulum ve Çalıştırma (Installation)
 
-### Web Geliştirme
+### 🐳 Docker ile Local Development (ÖNERİLEN)
+
+1. **Docker Desktop'ın çalıştığından emin olun**
+
+2. **Container'ları başlatın:**
+    ```bash
+    docker-compose up -d
+    ```
+
+3. **Projeye erişin:**
+    - Portfolio: http://localhost:8080
+    - phpMyAdmin: http://localhost:8081
+
+Detaylı bilgi için: `DOCKER_README.md`
+
+### ⚡ Hızlı Komutlar
+
+```powershell
+# 🌐 Sunucuya gönder (Production deploy)
+.\sunucuya-gonder.ps1
+
+# 🐙 GitHub'a gönder (Version control)
+.\github-gonder.ps1
+
+# 🏠 Local geliştirme
+docker-compose up -d
+npm run build
+docker-compose restart web
+```
+
+**📖 Detaylı workflow rehberi:** `WORKFLOW.md`
+
+### Web Geliştirme (Alternatif)
 
 1.  **Depoyu klonlayın:**
     ```bash

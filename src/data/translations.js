@@ -128,7 +128,54 @@ export const translations = {
         footer: {
             rights: 'All rights reserved.',
             madeWith: 'Made with',
-        }
+        },
+        projectDetails: {
+            title: "Project Details (Case Study)",
+            description: "This project was developed using modern web technologies. A user experience and performance-oriented approach was adopted. (Detailed project description fetched from database will be here.)"
+        },
+        aiChat: {
+            title: "Ahmet AI Assistant",
+            greeting: "Hello! I am Ahmet's AI assistant. How can I help you?",
+            placeholder: "Ask something...",
+            unknown: "I haven't learned this yet, but I can pass it on to Ahmet!",
+            projectsQuery: "Hi! Would you like to know about my projects?",
+            contactQuery: "You can reach Ahmet at ahmet@example.com.",
+            portfolioQuery: "Ahmet's portfolio includes Full Stack web apps, mobile apps, and AI integrations. Check out the 'Services' section!",
+            techQuery: "Ahmet usually uses React, Node.js, Python, and PHP."
+        },
+        blog: {
+            title: 'Blog & Articles',
+            readMore: 'Read More',
+            fallback: {
+                post1: {
+                    title: "Modern Web Development Trends 2025",
+                    summary: "Technologies and approaches standing out in the web development world in 2025.",
+                    category: "Technology"
+                },
+                post2: {
+                    title: "Coding with Antigravity: The Future of AI",
+                    summary: "Exploring the capabilities of Google's advanced AI coding assistant, Antigravity, and how it revolutionizes the development workflow.",
+                    category: "Artificial Intelligence"
+                }
+            }
+        },
+        testimonials: {
+            title: 'Testimonials',
+            fallback: {
+                item1: {
+                    text: "Working with Ahmet was great. He delivered our project on time and with excellent quality.",
+                    role: "CTO"
+                },
+                item2: {
+                    text: "He added value to our project with his creative solutions and technical knowledge. I definitely recommend him.",
+                    role: "Product Manager"
+                },
+                item3: {
+                    text: "Fast, reliable, and professional. He did a job far beyond our expectations.",
+                    role: "Founder"
+                }
+            }
+        },
     },
     tr: {
         nav: {
@@ -259,7 +306,54 @@ export const translations = {
         footer: {
             rights: 'Tüm hakları saklıdır.',
             madeWith: 'ile yapıldı',
-        }
+        },
+        projectDetails: {
+            title: "Proje Detayları (Case Study)",
+            description: "Bu proje, modern web teknolojileri kullanılarak geliştirilmiştir. Kullanıcı deneyimi ve performans odaklı bir yaklaşım benimsenmiştir. (Buraya veritabanından çekilen detaylı proje açıklaması gelecek.)"
+        },
+        aiChat: {
+            title: "Ahmet AI Asistan",
+            greeting: "Merhaba! Ben Ahmet'in AI asistanıyım. Size nasıl yardımcı olabilirim?",
+            placeholder: "Bir şeyler sorun...",
+            unknown: "Bunu henüz öğrenmedim, ama Ahmet'e iletebilirim!",
+            projectsQuery: "Selam! Projelerim hakkında bilgi almak ister misin?",
+            contactQuery: "Ahmet'e ahmet@example.com adresinden ulaşabilirsin.",
+            portfolioQuery: "Ahmet'in portföyünde Full Stack web uygulamaları, mobil uygulamalar ve yapay zeka entegrasyonları bulunuyor. 'Hizmetler' bölümüne göz atabilirsin!",
+            techQuery: "Ahmet genellikle React, Node.js, Python ve PHP kullanıyor."
+        },
+        blog: {
+            title: 'Blog & Yazılar',
+            readMore: 'Devamını Oku',
+            fallback: {
+                post1: {
+                    title: "Modern Web Geliştirme Trendleri 2025",
+                    summary: "2025 yılında web geliştirme dünyasında öne çıkan teknolojiler ve yaklaşımlar.",
+                    category: "Teknoloji"
+                },
+                post2: {
+                    title: "Antigravity ile Kodlama: Yapay Zekanın Geleceği",
+                    summary: "Google'ın gelişmiş yapay zeka kodlama asistanı Antigravity'nin yeteneklerini ve geliştirme sürecini nasıl devrimleştirdiğini keşfedin.",
+                    category: "Yapay Zeka"
+                }
+            }
+        },
+        testimonials: {
+            title: 'Referanslar',
+            fallback: {
+                item1: {
+                    text: "Ahmet ile çalışmak harikaydı. Projemizi zamanında ve mükemmel kalitede teslim etti.",
+                    role: "CTO"
+                },
+                item2: {
+                    text: "Yaratıcı çözümleri ve teknik bilgisiyle projemize değer kattı. Kesinlikle tavsiye ederim.",
+                    role: "Ürün Müdürü"
+                },
+                item3: {
+                    text: "Hızlı, güvenilir ve profesyonel. Beklentilerimizin çok ötesinde bir iş çıkardı.",
+                    role: "Kurucu"
+                }
+            }
+        },
     },
     ar: {
         nav: {
@@ -390,7 +484,54 @@ export const translations = {
         footer: {
             rights: 'جميع الحقوق محفوظة.',
             madeWith: 'صنع بـ',
-        }
+        },
+        projectDetails: {
+            title: "تفاصيل المشروع (دراسة حالة)",
+            description: "تم تطوير هذا المشروع باستخدام تقنيات الويب الحديثة. تم اعتماد نهج يركز على تجربة المستخدم والأداء. (سيكون وصف المشروع التفصيلي المسترد من قاعدة البيانات هنا.)"
+        },
+        aiChat: {
+            title: "مساعد أحمد الذكي",
+            greeting: "مرحباً! أنا مساعد أحمد الذكي. كيف يمكنني مساعدتك؟",
+            placeholder: "اسأل شيئاً...",
+            unknown: "لم أتعلم هذا بعد، لكن يمكنني نقله إلى أحمد!",
+            projectsQuery: "مرحباً! هل ترغب في معرفة المزيد عن مشاريعي؟",
+            contactQuery: "يمكنك التواصل مع أحمد عبر ahmet@example.com.",
+            portfolioQuery: "تتضمن محفظة أحمد تطبيقات ويب شاملة، تطبيقات جوال، وتكامل الذكاء الاصطناعي. تحقق من قسم 'الخدمات'!",
+            techQuery: "يستخدم أحمد عادةً React و Node.js و Python و PHP."
+        },
+        blog: {
+            title: 'المدونة والمقالات',
+            readMore: 'اقرأ المزيد',
+            fallback: {
+                post1: {
+                    title: "اتجاهات تطوير الويب الحديثة 2025",
+                    summary: "التقنيات والأساليب البارزة في عالم تطوير الويب في عام 2025.",
+                    category: "تكنولوجيا"
+                },
+                post2: {
+                    title: "البرمجة مع Antigravity: مستقبل الذكاء الاصطناعي",
+                    summary: "استكشاف قدرات مساعد البرمجة بالذكاء الاصطناعي المتقدم من Google، Antigravity، وكيف يحدث ثورة في سير عمل التطوير.",
+                    category: "الذكاء الاصطناعي"
+                }
+            }
+        },
+        testimonials: {
+            title: 'الشهادات',
+            fallback: {
+                item1: {
+                    text: "كان العمل مع أحمد رائعاً. سلم مشروعنا في الوقت المحدد وبجودة ممتازة.",
+                    role: "CTO"
+                },
+                item2: {
+                    text: "أضاف قيمة لمشروعنا بحلوله الإبداعية ومعرفته التقنية. أوصي به بشدة.",
+                    role: "مدير المنتج"
+                },
+                item3: {
+                    text: "سريع، موثوق، ومحترف. قام بعمل يتجاوز توقعاتنا بكثير.",
+                    role: "مؤسس"
+                }
+            }
+        },
     },
     de: {
         nav: {
@@ -521,7 +662,54 @@ export const translations = {
         footer: {
             rights: 'Alle Rechte vorbehalten.',
             madeWith: 'Gemacht mit',
-        }
+        },
+        projectDetails: {
+            title: "Projektdetails (Fallstudie)",
+            description: "Dieses Projekt wurde unter Verwendung moderner Webtechnologien entwickelt. Es wurde ein benutzererlebnis- und leistungsorientierter Ansatz gewählt. (Hier wird die detaillierte Projektbeschreibung aus der Datenbank stehen.)"
+        },
+        aiChat: {
+            title: "Ahmet KI-Assistent",
+            greeting: "Hallo! Ich bin Ahmets KI-Assistent. Wie kann ich Ihnen helfen?",
+            placeholder: "Fragen Sie etwas...",
+            unknown: "Das habe ich noch nicht gelernt, aber ich kann es an Ahmet weiterleiten!",
+            projectsQuery: "Hallo! Möchten Sie mehr über meine Projekte erfahren?",
+            contactQuery: "Sie können Ahmet unter ahmet@example.com erreichen.",
+            portfolioQuery: "Ahmets Portfolio umfasst Full-Stack-Webanwendungen, mobile Apps und KI-Integrationen. Schauen Sie sich den Bereich 'Dienstleistungen' an!",
+            techQuery: "Ahmet verwendet normalerweise React, Node.js, Python und PHP."
+        },
+        blog: {
+            title: 'Blog & Artikel',
+            readMore: 'Weiterlesen',
+            fallback: {
+                post1: {
+                    title: "Moderne Webentwicklungstrends 2025",
+                    summary: "Technologien und Ansätze, die 2025 in der Welt der Webentwicklung hervorstechen.",
+                    category: "Technologie"
+                },
+                post2: {
+                    title: "Programmieren mit Antigravity: Die Zukunft der KI",
+                    summary: "Erkundung der Fähigkeiten von Googles fortgeschrittenem KI-Codierungsassistenten Antigravity und wie er den Entwicklungsworkflow revolutioniert.",
+                    category: "Künstliche Intelligenz"
+                }
+            }
+        },
+        testimonials: {
+            title: 'Referenzen',
+            fallback: {
+                item1: {
+                    text: "Die Zusammenarbeit mit Ahmet war großartig. Er hat unser Projekt pünktlich und in hervorragender Qualität geliefert.",
+                    role: "CTO"
+                },
+                item2: {
+                    text: "Er hat mit seinen kreativen Lösungen und seinem technischen Wissen einen Mehrwert für unser Projekt geschaffen. Ich kann ihn definitiv empfehlen.",
+                    role: "Produktmanager"
+                },
+                item3: {
+                    text: "Schnell, zuverlässig und professionell. Er hat eine Arbeit geleistet, die weit über unsere Erwartungen hinausging.",
+                    role: "Gründer"
+                }
+            }
+        },
     },
     ru: {
         nav: {
@@ -652,6 +840,53 @@ export const translations = {
         footer: {
             rights: 'Все права защищены.',
             madeWith: 'Сделано с',
-        }
+        },
+        projectDetails: {
+            title: "Детали проекта (Case Study)",
+            description: "Этот проект был разработан с использованием современных веб-технологий. Был принят подход, ориентированный на пользовательский опыт и производительность. (Здесь будет подробное описание проекта, полученное из базы данных.)"
+        },
+        aiChat: {
+            title: "ИИ-ассистент Ахмета",
+            greeting: "Привет! Я ИИ-ассистент Ахмета. Чем могу помочь?",
+            placeholder: "Спросите что-нибудь...",
+            unknown: "Я этому еще не научился, но могу передать Ахмету!",
+            projectsQuery: "Привет! Хотите узнать о моих проектах?",
+            contactQuery: "Вы можете связаться с Ахметом по адресу ahmet@example.com.",
+            portfolioQuery: "Портфолио Ахмета включает Full Stack веб-приложения, мобильные приложения и интеграцию ИИ. Загляните в раздел 'Услуги'!",
+            techQuery: "Ахмет обычно использует React, Node.js, Python и PHP."
+        },
+        blog: {
+            title: 'Блог и статьи',
+            readMore: 'Читать далее',
+            fallback: {
+                post1: {
+                    title: "Тренды современной веб-разработки 2025",
+                    summary: "Технологии и подходы, выделяющиеся в мире веб-разработки в 2025 году.",
+                    category: "Технологии"
+                },
+                post2: {
+                    title: "Программирование с Antigravity: Будущее ИИ",
+                    summary: "Изучение возможностей передового ИИ-помощника по кодированию от Google, Antigravity, и того, как он революционизирует рабочий процесс разработки.",
+                    category: "Искусственный Интеллект"
+                }
+            }
+        },
+        testimonials: {
+            title: 'Отзывы',
+            fallback: {
+                item1: {
+                    text: "Работать с Ахметом было здорово. Он сдал наш проект вовремя и с отличным качеством.",
+                    role: "CTO"
+                },
+                item2: {
+                    text: "Он добавил ценность нашему проекту своими креативными решениями и техническими знаниями. Определенно рекомендую.",
+                    role: "Менеджер по продукту"
+                },
+                item3: {
+                    text: "Быстро, надежно и профессионально. Он проделал работу, которая намного превзошла наши ожидания.",
+                    role: "Основатель"
+                }
+            }
+        },
     }
 };

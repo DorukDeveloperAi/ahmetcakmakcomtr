@@ -18,23 +18,23 @@ const Blog = () => {
                 setBlogs(data);
             } catch (error) {
                 console.error('Error fetching blogs:', error);
-                // Fallback data
+                // Fallback data using translations
                 setBlogs([
                     {
                         id: 1,
-                        title: "Modern Web Geliştirme Trendleri 2025",
-                        slug: "modern-web-gelistirme-2025",
-                        summary: "2025 yılında web geliştirme dünyasında öne çıkan teknolojiler ve yaklaşımlar.",
+                        title: t.blog.fallback.post1.title,
+                        slug: "modern-web-development-2025",
+                        summary: t.blog.fallback.post1.summary,
                         image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop",
-                        category: "Teknoloji"
+                        category: t.blog.fallback.post1.category
                     },
                     {
                         id: 2,
-                        title: "Neden React ve Vite?",
-                        slug: "neden-react-ve-vite",
-                        summary: "Projelerimde neden bu ikiliyi tercih ediyorum? Performans ve geliştirici deneyimi üzerine bir inceleme.",
-                        image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=600&auto=format&fit=crop",
-                        category: "Yazılım"
+                        title: t.blog.fallback.post2.title,
+                        slug: "coding-with-antigravity",
+                        summary: t.blog.fallback.post2.summary,
+                        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop",
+                        category: t.blog.fallback.post2.category
                     }
                 ]);
             } finally {
@@ -43,7 +43,7 @@ const Blog = () => {
         };
 
         fetchBlogs();
-    }, [language]);
+    }, [language, t]);
 
     return (
         <section id="blog" className="section blog-section">
@@ -73,7 +73,7 @@ const Blog = () => {
                                 <h3 className="blog-title">{post.title}</h3>
                                 <p className="blog-summary">{post.summary}</p>
                                 <a href={`#blog/${post.slug}`} className="read-more">
-                                    Devamını Oku <FaArrowRight />
+                                    {t.blog.readMore} <FaArrowRight />
                                 </a>
                             </div>
                         </motion.div>

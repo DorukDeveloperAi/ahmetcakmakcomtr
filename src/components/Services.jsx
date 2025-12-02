@@ -231,11 +231,9 @@ const Services = () => {
                                 </div>
                                 <div className="project-detail-body">
                                     <p>{selectedProject.description}</p>
-                                    <h4>Proje Detayları (Case Study)</h4>
+                                    <h4>{t.projectDetails.title}</h4>
                                     <p>
-                                        Bu proje, modern web teknolojileri kullanılarak geliştirilmiştir.
-                                        Kullanıcı deneyimi ve performans odaklı bir yaklaşım benimsenmiştir.
-                                        (Buraya veritabanından çekilen detaylı proje açıklaması gelecek.)
+                                        {t.projectDetails.description}
                                     </p>
                                     <div className="project-detail-links">
                                         <a href={selectedProject.github} target="_blank" rel="noreferrer" className="btn btn-outline">

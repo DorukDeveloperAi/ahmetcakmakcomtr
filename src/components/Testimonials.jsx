@@ -23,27 +23,27 @@ const Testimonials = () => {
                     {
                         id: 1,
                         name: "Mehmet Yılmaz",
-                        role: "CTO",
+                        role: t.testimonials.fallback.item1.role,
                         company: "TechCorp",
-                        text: "Ahmet ile çalışmak harikaydı. Projemizi zamanında ve mükemmel kalitede teslim etti.",
+                        text: t.testimonials.fallback.item1.text,
                         image: "https://randomuser.me/api/portraits/men/32.jpg",
                         rating: 5
                     },
                     {
                         id: 2,
                         name: "Ayşe Demir",
-                        role: "Product Manager",
+                        role: t.testimonials.fallback.item2.role,
                         company: "StartUp Inc",
-                        text: "Yaratıcı çözümleri ve teknik bilgisiyle projemize değer kattı. Kesinlikle tavsiye ederim.",
+                        text: t.testimonials.fallback.item2.text,
                         image: "https://randomuser.me/api/portraits/women/44.jpg",
                         rating: 5
                     },
                     {
                         id: 3,
                         name: "Caner Erkin",
-                        role: "Founder",
+                        role: t.testimonials.fallback.item3.role,
                         company: "Digital Agency",
-                        text: "Hızlı, güvenilir ve profesyonel. Beklentilerimizin çok ötesinde bir iş çıkardı.",
+                        text: t.testimonials.fallback.item3.text,
                         image: "https://randomuser.me/api/portraits/men/85.jpg",
                         rating: 5
                     }
@@ -54,7 +54,7 @@ const Testimonials = () => {
         };
 
         fetchTestimonials();
-    }, [language]);
+    }, [language, t]);
 
     return (
         <section id="testimonials" className="section testimonials-section">

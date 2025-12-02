@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # PHP + Apache Web Server
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./dist:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - portfolio-network
+    environment:
+      - DOCKER_ENV=true
+
+  # MySQL Database
+  db:
+    image: mysql:8.0
+    container_name: portfolio-db
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: ahmetcak_db
+      MYSQL_USER: ahmetcak_admin
+      MYSQL_PASSWORD: YFatFw9K5WPJnJkVAUeH
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - portfolio-network
+
+  # phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: portfolio-phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: root123
+    depends_on:
+      - db
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge
+
+volumes:
+  mysql-data:
