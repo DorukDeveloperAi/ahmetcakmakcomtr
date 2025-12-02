@@ -45,7 +45,7 @@ Write-Host "🌍 Canlı site: https://ahmetcakmak.com.tr" -ForegroundColor White
 Write-Host ""
 
 # Tarayıcıda aç
-$openBrowser = Read-Host "Siteyi tarayıcıda açmak ister misiniz? (Y/N)"
-if ($openBrowser -eq 'Y' -or $openBrowser -eq 'y') {
+$openBrowser = Read-Host "Siteyi tarayıcıda açmak ister misiniz? (E/H)"
+if ($openBrowser -eq 'E' -or $openBrowser -eq 'e' -or $openBrowser -eq 'Y' -or $openBrowser -eq 'y') {
     Start-Process "https://ahmetcakmak.com.tr"
 }

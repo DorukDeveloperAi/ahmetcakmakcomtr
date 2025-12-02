@@ -1,250 +1,135 @@
-# Profesyonel Geliştirici Portföyü (Professional Developer Portfolio)
+# 🚀 Developer Portfolio & Blog - v1.2.0
 
-React, Vite ve Framer Motion kullanılarak oluşturulmuş, çok dilli (Türkçe, İngilizce, Arapça, Almanca, Rusça) ve modern bir kişisel portföy web sitesi. Web, iOS ve Android platformlarında kullanılabilir.
-
-**Canlı Demo:** [ahmetcakmak.com.tr](http://ahmetcakmak.com.tr)
-
-## 📱 Mobil Uygulamalar
-
-**İndir:**
-- 🍎 [iOS App (IPA)](https://ahmetcakmak.com.tr/downloads/App.ipa)
-- 📱 [Android App (APK)](https://ahmetcakmak.com.tr/downloads/AhmetCakmakPortfolio.apk)
-
-*Not: iOS uygulaması imzasız olduğu için sadece geliştirici cihazlarına yüklenebilir. Android uygulaması için "Bilinmeyen Kaynaklardan Yükleme" seçeneğini aktifleştirmeniz gerekebilir.*
-
-## 🚀 Özellikler (Features)
-
-### Web Özellikleri
-*   **Modern Teknoloji Yığını:** React 19, Vite 7, Framer Motion, Capacitor.
-*   **Çoklu Dil Desteği (i18n):**
-    *   **5 Dil Desteği:** Türkçe (TR), İngilizce (EN), Arapça (AR), Almanca (DE) ve Rusça (RU).
-    *   Arapça için otomatik **RTL (Sağdan Sola)** düzen desteği.
-    *   Bayraklı ve açılır menülü (dropdown) dil seçici.
-    *   Dil tercihi tarayıcı hafızasında (localStorage) saklanır.
-*   **Tasarım ve UI/UX:**
-    *   **Karanlık/Aydınlık Mod (Dark/Light Mode):** Kullanıcı tercihine göre tema değiştirme.
-    *   **Responsive Tasarım:** Mobil, tablet ve masaüstü cihazlarla tam uyumlu.
-    *   **Animasyonlar:** Framer Motion ile akıcı sayfa geçişleri ve mikro etkileşimler.
-    *   **Hero Bölümü:** "Code lines" arka plan efekti ve daktilo (typewriter) animasyonu.
-*   **İçerik Yönetimi:**
-    *   Merkezi dil dosyası (`src/data/translations.js`) üzerinden kolay içerik yönetimi.
-    *   Dinamik proje ve yetenek kartları.
-
-### Mobil Uygulama Özellikleri
-*   **Cross-Platform:** Capacitor kullanılarak web kodundan iOS ve Android uygulamaları oluşturuldu.
-*   **Otomatik Derleme:** GitHub Actions ile her push'ta otomatik iOS ve Android build.
-*   **Otomatik Dağıtım:** Derlenmiş uygulamalar otomatik olarak FTP ile sunucuya yüklenir.
-
-## 🛠️ Kurulum ve Çalıştırma (Installation)
-
-### 🐳 Docker ile Local Development (ÖNERİLEN)
-
-1. **Docker Desktop'ın çalıştığından emin olun**
-
-2. **Container'ları başlatın:**
-    ```bash
-    docker-compose up -d
-    ```
-
-3. **Projeye erişin:**
-    - Portfolio: http://localhost:8080
-    - phpMyAdmin: http://localhost:8081
-
-Detaylı bilgi için: `DOCKER_README.md`
-
-### ⚡ Hızlı Komutlar
-
-```powershell
-# 🌐 Sunucuya gönder (Production deploy)
-.\sunucuya-gonder.ps1
-
-# 🐙 GitHub'a gönder (Version control)
-.\github-gonder.ps1
-
-# 🏠 Local geliştirme
-docker-compose up -d
-npm run build
-docker-compose restart web
-```
-
-**📖 Detaylı workflow rehberi:** `WORKFLOW.md`
-
-### Web Geliştirme (Alternatif)
-
-1.  **Depoyu klonlayın:**
-    ```bash
-    git clone https://github.com/DorukDeveloperAi/ahmetcakmakcomtr.git
-    cd ahmetcakmakcomtr
-    ```
-
-2.  **Bağımlılıkları yükleyin:**
-    ```bash
-    npm install --legacy-peer-deps
-    ```
-
-3.  **Geliştirme sunucusunu başlatın:**
-    ```bash
-    npm run dev
-    ```
-
-4.  **Üretim için derleyin (Build):**
-    ```bash
-    npm run build
-    ```
-
-### Mobil Uygulama Geliştirme
-
-1.  **Android için:**
-    ```bash
-    npx cap add android
-    npx cap sync android
-    cd android
-    ./gradlew assembleRelease
-    ```
-
-2.  **iOS için (macOS gerektirir):**
-    ```bash
-    npx cap add ios
-    npx cap sync ios
-    cd ios/App
-    xcodebuild -workspace App.xcworkspace -scheme App archive
-    ```
-
-## 🤖 CI/CD ve Otomasyonlar
-
-### GitHub Actions Workflows
-
-Projede iki otomatik workflow bulunmaktadır:
-
-#### 1. Android Build (`.github/workflows/android-build.yml`)
-- **Tetikleme:** Her `master` branch'e push veya manuel tetikleme
-- **İşlemler:**
-  - Node.js 22 ve Java 21 kurulumu
-  - Bağımlılıkları yükleme (`--legacy-peer-deps`)
-  - Web projesini derleme (`npm run build`)
-  - Capacitor Android platformunu ekleme/senkronizasyon
-  - Gradle ile Release APK oluşturma
-  - APK'yı FTP ile sunucuya yükleme (`downloads/AhmetCakmakPortfolio.apk`)
-
-#### 2. iOS Build (`.github/workflows/ios-build.yml`)
-- **Tetikleme:** Her `master` branch'e push veya manuel tetikleme
-- **İşlemler:**
-  - macOS runner üzerinde çalışır
-  - Node.js 22 kurulumu
-  - Bağımlılıkları yükleme
-  - Web projesini derleme
-  - Capacitor iOS platformunu ekleme/senkronizasyon
-  - Xcode ile unsigned IPA oluşturma
-  - IPA'yı FTP ile sunucuya yükleme (`downloads/App.ipa`)
-
-### GitHub Secrets Yapılandırması
-
-Workflow'ların çalışması için aşağıdaki secrets ayarlanmalıdır:
-- `FTP_SERVER`: FTP sunucu adresi
-- `FTP_USERNAME`: FTP kullanıcı adı
-- `FTP_PASSWORD`: FTP şifresi
-
-Secrets'ları eklemek için:
-```bash
-gh secret set FTP_SERVER
-gh secret set FTP_USERNAME
-gh secret set FTP_PASSWORD
-```
-
-## 📂 Proje Yapısı
-
-```
-├── .github/
-│   └── workflows/          # GitHub Actions workflow dosyaları
-│       ├── android-build.yml
-│       └── ios-build.yml
-├── src/
-│   ├── components/         # React bileşenleri
-│   ├── context/           # Context API (LanguageContext)
-│   ├── data/              # Çeviri dosyaları ve sabit veriler
-│   └── assets/            # Görseller ve statik dosyalar
-├── public/                # Public statik dosyalar
-├── android/               # Android native projesi (Capacitor)
-├── ios/                   # iOS native projesi (Capacitor)
-├── dist/                  # Build çıktıları
-├── capacitor.config.ts    # Capacitor yapılandırması
-└── deploy.js              # FTP deployment betiği
-```
-
-## 📝 Güncellemeler (Changelog)
-
-### [01.12.2025] - Mobil Uygulama Desteği ve CI/CD
-
-#### Yeni Özellikler
-*   **Mobil Uygulama:**
-    *   Capacitor entegrasyonu ile iOS ve Android uygulamaları oluşturuldu.
-    *   Cross-platform yapı sayesinde tek kod tabanından her iki platform için build alınabiliyor.
-    
-*   **CI/CD Pipeline:**
-    *   GitHub Actions ile otomatik iOS build workflow'u eklendi.
-    *   GitHub Actions ile otomatik Android build workflow'u eklendi.
-    *   Her push işleminde otomatik derleme ve FTP'ye yükleme.
-    *   GitHub Secrets ile güvenli FTP kimlik bilgileri yönetimi.
-
-*   **Otomatik Dağıtım:**
-    *   Derlenmiş IPA ve APK dosyaları otomatik olarak sunucuya yükleniyor.
-    *   İndirilebilir mobil uygulama linkleri README'ye eklendi.
-
-#### Teknik İyileştirmeler
-*   Node.js 22 ve Java 21 gereksinimleri karşılandı.
-*   Gradle izin sorunları düzeltildi (`chmod +x gradlew`).
-*   FTP upload path'i düzeltildi (istenmeyen `public_html` klasörü oluşturma sorunu çözüldü).
-*   iOS platformu için koşullu ekleme mantığı (`if [ ! -d "ios" ]`).
-*   Android platformu için koşullu ekleme mantığı (`if [ ! -d "android" ]`).
-
-#### Hata Düzeltmeleri
-*   Xcode build komut söz dizimi hatası düzeltildi (`-configuration Release -sdk iphoneos`).
-*   Java source release versiyonu uyumsuzluğu giderildi (17 → 21).
-*   npm peer dependency uyarıları `--legacy-peer-deps` ile aşıldı.
-
-### [01.12.2025] - Hizmetler Bölümü ve İyileştirmeler
-
-#### Hizmetler (Services) Bölümü Geliştirmeleri
-*   **Detaylı Hizmet Listesi:** "Tüm Hizmetleri Görüntüle" butonu eklendi. Modal pencerede kategorize hizmet listesi.
-*   **Mobil Uyumluluk:** Hizmet kartlarının mobil cihazlarda düzgün görüntülenmesi için CSS düzenlemeleri.
-*   **Görsel Optimizasyonu:** Unsplash görsellerinin çözünürlükleri optimize edildi (`w=600`).
-*   **Danışmanlık CTA Alanı:**
-    *   Metin iki satıra bölündü.
-    *   Modern teknolojik görsel kullanıldı.
-    *   Buton tasarımı iyileştirildi.
-
-#### Diğer İyileştirmeler
-*   **İngilizce Çeviri Hatası:** `translations.js` dosyasındaki yapısal hata giderildi.
-*   **Çeviri Güncellemeleri:** "View All Services" butonu çevirileri tüm dillere eklendi.
-*   **Dil Desteği:** README'de dil sayısı güncellendi (5 dil).
-
-## 🚀 Deployment
-
-### Manuel Deployment (FTP)
-`deploy.js` dosyasındaki FTP bilgilerini düzenledikten sonra:
-```bash
-npm run build
-node deploy.js
-```
-
-### Otomatik Deployment (GitHub Actions)
-Her `master` branch'e push işleminde otomatik olarak:
-1. Web sitesi derlenir
-2. iOS ve Android uygulamaları derlenir
-3. Tüm build çıktıları sunucuya yüklenir
-
-Manuel tetikleme için:
-```bash
-gh workflow run android-build.yml
-gh workflow run ios-build.yml
-```
-
-## 👤 Geliştirici
-
-**Ahmet ÇAKMAK**
-*   Full Stack Geliştirici
-*   Yapay Zeka & Makine Öğrenimi Meraklısı
-*   [Website](https://ahmetcakmak.com.tr)
+## 📝 Sürüm Notları
+**Tarih:** 02.12.2025
+**Sürüm:** 1.2.0
+- **Veritabanı Entegrasyonu:** Tamamlandı. MySQL veritabanı Docker üzerinde ve canlı sunucuda senkronize edildi.
+- **Otomatik Dağıtım:** `sunucuya-gonder.ps1` ile tek tıkla build ve FTP upload süreci, `deploy-database.php` ile veritabanı şeması güncelleme özelliği eklendi.
+- **AI Chat Widget:** Ziyaretçilerle etkileşim kuran yapay zeka destekli sohbet botu eklendi.
+- **Blog & Referanslar:** Dinamik içerik yönetimi için veritabanı tabloları ve API uçları oluşturuldu.
+- **Çoklu Dil Desteği:** TR, EN, DE, RU, AR dilleri için altyapı güçlendirildi.
 
 ---
-© 2024 Ahmet ÇAKMAK. Tüm hakları saklıdır.
+
+## 🛠️ Gereksinimler (Kurulması Gerekenler)
+Projeyi yerel ortamda çalıştırmak ve geliştirmek için aşağıdaki yazılımların bilgisayarınızda kurulu olması gerekir:
+
+1.  **Node.js** (v18 veya üzeri) - Paket yönetimi ve build işlemleri için.
+2.  **Docker Desktop** - İzole geliştirme ortamı (PHP, Apache, MySQL) için.
+3.  **Visual Studio Code** - Önerilen kod editörü.
+4.  **Git** - Versiyon kontrolü için.
+5.  **PowerShell** - Otomasyon scriptlerini çalıştırmak için (Windows'ta varsayılan).
+
+---
+
+## 💻 Kullanılan Teknolojiler
+
+### Frontend
+- **HTML5 & CSS3:** Modern, semantik ve responsive tasarım.
+- **JavaScript (ES6+):** Modüler yapı, dinamik etkileşimler.
+- **Vite:** Hızlı geliştirme sunucusu ve optimize edilmiş build aracı.
+- **Bootstrap 5:** Grid sistemi ve hazır bileşenler (özelleştirilmiş).
+
+### Backend
+- **PHP 8.2:** Sunucu taraflı mantık ve API yönetimi.
+- **MySQL 8.0:** İlişkisel veritabanı yönetimi.
+- **RESTful API:** Frontend ve veritabanı iletişimi için JSON tabanlı servisler.
+
+### DevOps & Araçlar
+- **Docker & Docker Compose:** Konteynerizasyon.
+- **Basic-FTP:** Node.js tabanlı FTP dağıtım kütüphanesi.
+- **PowerShell Scripting:** Otomasyon süreçleri.
+
+---
+
+## ✨ Site Özellikleri
+
+1.  **Dinamik İçerik Yönetimi:**
+    *   **Blog Sistemi:** Veritabanından çekilen makaleler.
+    *   **Referanslar (Testimonials):** Müşteri yorumları modülü.
+2.  **Yapay Zeka Asistanı (AI Chat):**
+    *   Kullanıcı sorularını yanıtlayan akıllı bot.
+    *   Konuşma geçmişi kaydı (`chat_logs`).
+    *   Bilgi tabanı yönetimi (`chat_knowledge_base`).
+3.  **Çoklu Dil Desteği:**
+    *   5 farklı dil seçeneği (Türkçe, İngilizce, Almanca, Rusça, Arapça).
+    *   Otomatik dil algılama ve geçiş.
+4.  **İletişim Formu:**
+    *   SMTP üzerinden e-posta gönderimi.
+    *   Form validasyonu.
+5.  **Responsive Tasarım:**
+    *   Mobil, tablet ve masaüstü uyumlu arayüz.
+    *   Karanlık/Aydınlık mod (altyapısı hazır).
+
+---
+
+## 🗺️ Site Haritası
+
+- **Ana Sayfa (/)**
+    - Hero Bölümü (Giriş)
+    - Hakkımda
+    - Hizmetler
+    - Yetenekler
+    - Referanslar
+    - Blog Özetleri
+    - İletişim
+- **Blog Detay Sayfaları** (`/blog/slug`)
+- **Yönetim Araçları** (Erişim Kısıtlı)
+    - `/db-deploy/deploy-database.php` (Veritabanı kurulumu)
+    - `/api/db.php` (Veritabanı bağlantı testi)
+
+---
+
+## 📜 Yapılan İşlemler (Changelog)
+
+Proje geliştirme sürecinde gerçekleştirilen adımlar:
+
+1.  **Proje Başlangıcı:** Vite ile vanilla JavaScript projesi oluşturuldu.
+2.  **Tasarım Uyarlaması:** HTML/CSS yapısı modern UI trendlerine göre kodlandı.
+3.  **Docker Ortamının Kurulması:**
+    *   `Dockerfile` ve `docker-compose.yml` hazırlandı.
+    *   PHP-Apache ve MySQL servisleri ayağa kaldırıldı.
+    *   phpMyAdmin entegre edildi.
+4.  **Veritabanı Mimarisi:**
+    *   `init.sql` ile veritabanı şeması oluşturuldu.
+    *   Tablolar: `chat_logs`, `chat_knowledge_base`, `testimonials`, `blogs`.
+5.  **Backend Geliştirmesi:**
+    *   PHP ile veritabanı bağlantı katmanı (`db.php`) yazıldı.
+    *   Docker ve Prodüksiyon ortamlarını tanıyan dinamik bağlantı yapısı kuruldu.
+6.  **Otomasyon Scriptleri:**
+    *   `deploy.js`: FTP üzerinden dosya yükleme.
+    *   `deploy-database.js` & `.php`: Veritabanı senkronizasyonu.
+    *   `sunucuya-gonder.ps1`: Tek komutla tüm deploy sürecini yönetme.
+7.  **Hata Düzeltmeleri ve İyileştirmeler:**
+    *   XAMPP bağımlılığı kaldırıldı, tamamen Docker'a geçildi.
+    *   FTP bağlantı sorunları ve dosya izinleri çözüldü.
+    *   Veritabanı karakter seti (UTF-8) sorunları giderildi.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 📌 Önemli Notlar ve İpuçları (Unutulanlar)
+
+### 📂 Dosya Yapısı
+```
+/
+├── public/             # Statik dosyalar (resimler, favicon vb.)
+├── src/                # Kaynak kodlar (JS, CSS)
+├── docker/             # Docker yapılandırma ve SQL dosyaları
+├── dist/               # Build sonrası oluşan üretim dosyaları
+├── .env                # (Opsiyonel) Hassas veriler için ortam değişkenleri
+└── ...
+```
+
+### 🔐 Güvenlik Uyarısı
+*   `deploy-database.php` dosyası sunucuda veritabanını sıfırlama yetkisine sahiptir. Deploy işleminden sonra sunucudan silinmesi veya erişime kapatılması önerilir.
+*   Veritabanı şifreleri kod içinde hardcoded (gömülü) durumdadır. İlerleyen aşamada `.env` dosyasına taşınmalıdır.
+
+### 🚀 Nasıl Geliştirme Yapılır?
+1.  `docker-compose up -d` ile ortamı başlatın.
+2.  `http://localhost:8080` adresinden siteyi görüntüleyin.
+3.  Kod değişikliklerini yapın.
+4.  `npm run build` ile derleyin.
+5.  Değişiklikleri görmek için `docker-compose restart web` yapın (PHP dosyaları için) veya tarayıcıyı yenileyin (JS/CSS için).
+
+### 📄 Lisans
+Bu proje kişisel portfolyo amaçlı hazırlanmıştır. İzinsiz ticari kullanımı kısıtlı olabilir.
