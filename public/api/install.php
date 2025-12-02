@@ -63,12 +63,12 @@ try {
     ]);
     $stmtBlog->execute([
         "tr",
-        "Neden React ve Vite?",
-        "neden-react-ve-vite",
-        "Projelerimde neden bu ikiliyi tercih ediyorum? Performans ve geliştirici deneyimi üzerine bir inceleme.",
-        "# Neden React ve Vite?\n\nEskiden Create React App kullanırdık, ama artık Vite var. \n\n## Hız\nVite, native ES modules kullanarak inanılmaz hızlı bir geliştirme ortamı sunuyor.\n\n## Ekosistem\nReact ekosistemi ile mükemmel uyum sağlıyor.",
-        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=600&auto=format&fit=crop",
-        "Yazılım"
+        "Antigravity ile Kodlama: Yapay Zekanın Geleceği",
+        "antigravity-ile-kodlama",
+        "Google'ın gelişmiş yapay zeka kodlama asistanı Antigravity'nin yeteneklerini ve geliştirme sürecini nasıl devrimleştirdiğini keşfedin.",
+        "# Antigravity ile Kodlama\n\nYapay zeka kodlama asistanları artık sadece kod tamamlama yapmıyor. Antigravity gibi gelişmiş sistemler tüm projeleri yönetebiliyor.\n\n## Özellikler\n- Tam otonom kod yazma\n- Proje yönetimi\n- Hata düzeltme\n\nDetaylar yakında...",
+        "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop",
+        "Yapay Zeka"
     ]);
 
     // EN
@@ -83,12 +83,12 @@ try {
     ]);
     $stmtBlog->execute([
         "en",
-        "Why React and Vite?",
-        "why-react-and-vite",
-        "Why do I prefer this duo in my projects? A review on performance and developer experience.",
-        "# Why React and Vite?\n\nWe used to use Create React App, but now there is Vite. \n\n## Speed\nVite offers an incredibly fast development environment using native ES modules.\n\n## Ecosystem\nIt integrates perfectly with the React ecosystem.",
-        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=600&auto=format&fit=crop",
-        "Software"
+        "Coding with Antigravity: The Future of AI",
+        "coding-with-antigravity",
+        "Exploring the capabilities of Google's advanced AI coding assistant, Antigravity, and how it revolutionizes the development workflow.",
+        "# Coding with Antigravity\n\nAI coding assistants now do more than just code completion. Advanced systems like Antigravity can manage entire projects.\n\n## Features\n- Fully autonomous code writing\n- Project management\n- Bug fixing\n\nDetails coming soon...",
+        "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop",
+        "Artificial Intelligence"
     ]);
 
     echo json_encode(["message" => "Database setup completed successfully with Multi-Language support."]);
