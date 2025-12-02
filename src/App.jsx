@@ -6,6 +6,9 @@ import Skills from './components/Skills';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Testimonials from './components/Testimonials';
+import Blog from './components/Blog';
+import AIChat from './components/AIChat';
 import './App.css';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -40,9 +43,12 @@ function App() {
                     <Hero />
                     <Services />
                     <Skills />
+                    <Testimonials />
+                    <Blog />
                     <About />
                     <Contact />
                 </main>
+                <AIChat />
                 <Footer />
             </div>
         </LanguageProvider>

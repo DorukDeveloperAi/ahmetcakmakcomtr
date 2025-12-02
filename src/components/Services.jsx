@@ -9,6 +9,15 @@ const Services = () => {
     const scrollContainer = React.useRef(null);
     const [isHovered, setIsHovered] = React.useState(false);
     const [showAllServices, setShowAllServices] = React.useState(false);
+    const [selectedProject, setSelectedProject] = React.useState(null);
+
+    const openProjectDetails = (project) => {
+        setSelectedProject(project);
+    };
+
+    const closeProjectDetails = () => {
+        setSelectedProject(null);
+    };
 
     const toggleAllServices = () => {
         setShowAllServices(!showAllServices);
@@ -113,17 +122,16 @@ const Services = () => {
                                 <div
                                     key={`${project.id}-${index}`}
                                     className="project-card"
+                                    onClick={() => openProjectDetails(project)}
+                                    style={{ cursor: 'pointer' }}
                                 >
                                     <div className="project-image">
                                         <img src={project.image} alt={project.title} />
                                         <div className="project-overlay">
                                             <div className="project-links">
-                                                <a href={project.github} target="_blank" rel="noreferrer" aria-label="GitHub Repo">
-                                                    <FaGithub />
-                                                </a>
-                                                <a href={project.demo} target="_blank" rel="noreferrer" aria-label="Live Demo">
+                                                <button className="btn-icon" aria-label="View Details">
                                                     <FaExternalLinkAlt />
-                                                </a>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -164,6 +172,7 @@ const Services = () => {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             onClick={toggleAllServices}
+                            style={{ zIndex: 2000 }}
                         >
                             <motion.div
                                 className="services-modal-content"
@@ -185,6 +194,57 @@ const Services = () => {
                                             </ul>
                                         </div>
                                     ))}
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
+                <AnimatePresence>
+                    {selectedProject && (
+                        <motion.div
+                            className="services-modal-overlay"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={closeProjectDetails}
+                            style={{ zIndex: 2001 }}
+                        >
+                            <motion.div
+                                className="services-modal-content project-detail-modal"
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.8, opacity: 0 }}
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <button className="modal-close-btn" onClick={closeProjectDetails}>&times;</button>
+                                <div className="project-detail-header">
+                                    <img src={selectedProject.image} alt={selectedProject.title} className="project-detail-image" />
+                                    <div className="project-detail-title-area">
+                                        <h3 className="modal-title">{selectedProject.title}</h3>
+                                        <div className="project-tech">
+                                            {selectedProject.tech.map((tech) => (
+                                                <span key={tech} className="tech-tag">{tech}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="project-detail-body">
+                                    <p>{selectedProject.description}</p>
+                                    <h4>Proje Detayları (Case Study)</h4>
+                                    <p>
+                                        Bu proje, modern web teknolojileri kullanılarak geliştirilmiştir.
+                                        Kullanıcı deneyimi ve performans odaklı bir yaklaşım benimsenmiştir.
+                                        (Buraya veritabanından çekilen detaylı proje açıklaması gelecek.)
+                                    </p>
+                                    <div className="project-detail-links">
+                                        <a href={selectedProject.github} target="_blank" rel="noreferrer" className="btn btn-outline">
+                                            <FaGithub /> GitHub
+                                        </a>
+                                        <a href={selectedProject.demo} target="_blank" rel="noreferrer" className="btn btn-primary">
+                                            <FaExternalLinkAlt /> Live Demo
+                                        </a>
+                                    </div>
                                 </div>
                             </motion.div>
                         </motion.div>

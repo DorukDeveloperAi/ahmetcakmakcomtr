@@ -35,6 +35,8 @@ const Navbar = ({ theme, toggleTheme }) => {
     { name: t.nav.home, href: '#home' },
     { name: t.nav.projects, href: '#services' },
     { name: t.nav.skills, href: '#skills' },
+    { name: t.nav.testimonials, href: '#testimonials' },
+    { name: t.nav.blog, href: '#blog' },
     { name: t.nav.about, href: '#about' },
     { name: t.nav.contact, href: '#contact' },
   ];

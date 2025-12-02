@@ -9,6 +9,8 @@ export const translations = {
             downloadApp: 'Download App',
             android: 'Android',
             ios: 'iOS',
+            testimonials: 'Testimonials',
+            blog: 'Blog',
         },
         meta: {
             title: 'Ahmet Çakmak - IT Specialist & Full Stack Developer',
@@ -94,6 +96,12 @@ export const translations = {
         skills: {
             title: 'Technical Skills',
         },
+        testimonials: {
+            title: 'Testimonials',
+        },
+        blog: {
+            title: 'Blog & Articles',
+        },
         about: {
             title: 'About Me',
             p1: 'I am a graduate of Kocaeli University Computer Education. I have been working professionally in the IT and Software field for over 10 years. Throughout my career, I have gained extensive experience in both system/network administration and full stack web development.',
@@ -132,6 +140,8 @@ export const translations = {
             downloadApp: 'Uygulamayı İndir',
             android: 'Android',
             ios: 'iOS',
+            testimonials: 'Referanslar',
+            blog: 'Blog',
         },
         meta: {
             title: 'Ahmet Çakmak - Bilgi İşlem Uzmanı & Full Stack Geliştirici',
@@ -217,6 +227,12 @@ export const translations = {
         skills: {
             title: 'Teknik Yetenekler',
         },
+        testimonials: {
+            title: 'Referanslar',
+        },
+        blog: {
+            title: 'Blog & Yazılar',
+        },
         about: {
             title: 'Hakkımda',
             p1: 'Kocaeli Üniversitesi Bilgisayar Öğretmenliği mezunuyum. 10 yılı aşkın süredir Bilgi İşlem ve Yazılım alanında profesyonel olarak çalışmaktayım. Kariyerim boyunca hem sistem/ağ yönetimi hem de full stack web geliştirme konularında geniş bir tecrübe edindim.',
@@ -255,6 +271,8 @@ export const translations = {
             downloadApp: 'تحميل التطبيق',
             android: 'Android',
             ios: 'iOS',
+            testimonials: 'الشهادات',
+            blog: 'المدونة',
         },
         meta: {
             title: 'أحمد تشاكماك - أخصائي تكنولوجيا المعلومات ومطور شامل',
@@ -340,6 +358,12 @@ export const translations = {
         skills: {
             title: 'المهارات التقنية',
         },
+        testimonials: {
+            title: 'الشهادات',
+        },
+        blog: {
+            title: 'المدونة والمقالات',
+        },
         about: {
             title: 'عني',
             p1: 'تخرجت من جامعة كوجالي، قسم تعليم الكمبيوتر. أعمل بشكل احترافي في مجال تكنولوجيا المعلومات والبرمجيات لأكثر من 10 سنوات. طوال مسيرتي المهنية، اكتسبت خبرة واسعة في كل من إدارة الأنظمة/الشبكات وتطوير الويب الشامل.',
@@ -378,6 +402,8 @@ export const translations = {
             downloadApp: 'App herunterladen',
             android: 'Android',
             ios: 'iOS',
+            testimonials: 'Referenzen',
+            blog: 'Blog',
         },
         meta: {
             title: 'Ahmet Çakmak - IT-Spezialist & Full Stack Entwickler',
@@ -463,6 +489,12 @@ export const translations = {
         skills: {
             title: 'Technische Fähigkeiten',
         },
+        testimonials: {
+            title: 'Referenzen',
+        },
+        blog: {
+            title: 'Blog & Artikel',
+        },
         about: {
             title: 'Über mich',
             p1: 'Ich habe an der Universität Kocaeli, Abteilung für Computerpädagogik, meinen Abschluss gemacht. Ich arbeite seit über 10 Jahren professionell im Bereich IT und Software. Während meiner Karriere habe ich umfangreiche Erfahrungen sowohl im System-/Netzwerkmanagement als auch in der Full-Stack-Webentwicklung gesammelt.',
@@ -501,6 +533,8 @@ export const translations = {
             downloadApp: 'Скачать приложение',
             android: 'Android',
             ios: 'iOS',
+            testimonials: 'Отзывы',
+            blog: 'Блог',
         },
         meta: {
             title: 'Ахмет Чакмак - IT-специалист и Full Stack разработчик',
@@ -585,6 +619,12 @@ export const translations = {
         },
         skills: {
             title: 'Технические навыки',
+        },
+        testimonials: {
+            title: 'Отзывы',
+        },
+        blog: {
+            title: 'Блог и статьи',
         },
         about: {
             title: 'Обо мне',
