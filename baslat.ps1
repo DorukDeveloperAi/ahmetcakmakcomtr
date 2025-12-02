@@ -33,7 +33,7 @@ Write-Host "🔍 Docker durumu kontrol ediliyor..." -ForegroundColor Gray
 
 $dockerRunning = $false
 try {
-    $result = docker ps 2>&1
+    docker ps 2>&1 | Out-Null
     if ($LASTEXITCODE -eq 0) {
         $dockerRunning = $true
     }
